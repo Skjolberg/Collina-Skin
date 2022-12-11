@@ -1,0 +1,57 @@
+ <!-- panel displaying extra attributes a bout a player, for example condition, footedness etc -->
+<!-- Meant to be used with a CLIENT_OBJECT_XML_panel -->
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+  <layout class="arrange_vertical_attachment" alignment="top, extend" offset="27" gap="0"/>
+  
+  
+  
+   <widget class="client_object_label_value_table"  auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+					<record id="table_properties" layout="-5, -2"   mode="fill_rows, stripe_rows" >
+					<list id="column_widget_properties">
+						<record indx="0" style="shadowed" size="10" alignment="left,centre_y" />
+						<record indx="1" font="title1" style="shadowed" size="10" colour="accent" alignment="centre_y" />
+					</list>
+						<integer id="row_spacing" value="0"  />
+			
+					
+					</record>
+					<list id="viewed_property_ids">
+																
+						<integer value="Pgoa" />
+						<integer value="Pdls" />
+						<integer value="Pdce" />
+						<integer value="Pdrs" />
+						<integer value="Pwbl" />
+						<integer value="Pwbr" />
+						<integer value="Pdmc" />
+						<integer value="Pmls" />
+						<integer value="Pmce" />
+						<integer value="Pmrs" />
+						<integer value="Paml" />
+						<integer value="Pamc" />
+						<integer value="Pamr" />
+						<integer value="Pace" />
+						
+
+					</list>
+					
+					
+				</widget>
+
+ 
+	
+
+  
+	
+
+
+	
+
+
+
+</panel>

@@ -1,0 +1,144 @@
+<panel should_force_refresh="true">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	<container class="scrolling_box">
+		<container id="main">
+			<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+			<widget class="label" alignment="left,can_scale,centre" colour="bg custom green" font="title">
+				<translation id="text" translation_id="232994" type="use" value="Info[COMMENT: player popup info panel - scout current ability rating]" />
+			</widget>
+			<container class="bordered_box" appearance="boxes/bordered/standard/trainning_box">
+				<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
+				<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+				<widget class="client_object_label_value_table" id="cyip" auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+					<record id="table_properties" layout="-1, -1" mode="fill_rows, stripe_rows" >
+						<integer id="row_spacing" value="2" />
+						<list id="column_properties">
+							<record indx="0" colour="faded text" alignment="centre_y,left" />
+							<record indx="1" font="text" alignment="centre,right" multiline="true" auto_size="vertical"/>
+						</list>
+						<list id="column_display_properties">
+							<record indx="0" left="4" sort_disabled="true" />
+							<record indx="1" right="4" sort_disabled="true" />
+						</list>
+					</record>
+					<list id="viewed_property_ids">
+						<integer value="nsss" />
+						<integer value="duni" />
+						<integer value="Pfln" />
+						<integer value="Pdob" />
+						<integer value="Pnob" />
+						<integer value="Pcob" />
+						<integer value="Pist" />
+						<integer value="Lang" />
+					</list>
+				</widget>
+			</container>
+			<widget class="label" alignment="left,can_scale,centre" colour="bg custom green" font="title">
+				<translation id="text" translation_id="230106" type="use" value="Mental" />
+			</widget>
+			<container class="bordered_box" appearance="boxes/bordered/standard/trainning_box">
+				<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+				<widget class="client_object_label_value_table" id="yPim" auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+					<record id="table_properties" layout="-1, -1" mode="fill_rows, stripe_rows" >
+						<integer id="row_spacing" value="2" />
+						<list id="column_properties">
+							<record indx="0" colour="faded text" alignment="centre_y,left" />
+							<record indx="1" font="text" alignment="centre,right" multiline="true" auto_size="vertical"/>
+						</list>
+						<list id="column_display_properties">
+							<record indx="0" left="4" sort_disabled="true" />
+							<record indx="1" right="4" sort_disabled="true" />
+						</list>
+					</record>
+					<list id="viewed_property_ids">
+						<integer value="PPst" />
+						<integer value="Pghm" />
+						<integer value="Pmor" />
+						<integer value="PHgh" />
+						<integer value="rlhn" />
+						<integer value="DRsd" />
+						<integer value="THic" />
+						<integer value="Pfpv" />
+						<integer value="Pfcl" />
+
+					</list>
+				</widget>
+			</container>
+			<widget class="label" alignment="left,can_scale,centre" colour="bg custom green" font="title">
+				<translation id="text" translation_id="230163" type="use" value="Contract" />
+			</widget>
+			<container class="bordered_box" appearance="boxes/bordered/standard/trainning_box">
+				<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+				<widget class="client_object_label_value_table" id="yPic" auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+					<record id="table_properties" layout="-1, -1" mode="fill_rows, stripe_rows" auto_size_rows="true"  >
+						<integer id="row_spacing" value="2" />
+						<list id="column_properties">
+							<record indx="0" colour="faded text" alignment="centre_y,left" />
+							<record indx="1" font="text" alignment="centre,right" multiline="true"/>
+						</list>
+						<list id="column_display_properties">
+							<record indx="0" left="4" sort_disabled="true" />
+							<record indx="1" right="4" sort_disabled="true" />
+						</list>
+					</record>
+					<list id="viewed_property_ids">
+						<integer value="Pclb" />
+						<integer value="Pbas" />
+						<integer value="Pdva" />
+						<integer value="Pcww" />
+						<integer value="Pcsd" />
+						<integer value="Pcex" />
+						<integer value="Pagn" />
+						<integer value="Plcl" />
+					</list>
+				</widget>
+			</container>
+			<widget class="label" alignment="left,can_scale,centre" colour="bg custom green" font="title">
+				<translation id="text" translation_id="314426" type="use" value="Ability[COMMENT: player popup info panel - scout current ability rating]" />
+			</widget>
+			<container class="bordered_box" appearance="boxes/bordered/standard/trainning_box">
+				<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" />
+				<widget class="client_object_label_value_table" id="yPia" auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+					<record id="table_properties" layout="-1, -1" mode="fill_rows, stripe_rows" >
+						<integer id="row_spacing" value="2" />
+						<list id="column_properties">
+							<record indx="0" colour="faded text" alignment="centre_y,left" />
+							<record indx="1" font="text" alignment="centre,right" multiline="true" auto_size="vertical"/>
+						</list>
+						<list id="column_display_properties">
+							<record indx="0" left="4" sort_disabled="true" />
+							<record indx="1" right="4" sort_disabled="true" />
+						</list>
+					</record>
+					<list id="viewed_property_ids">
+						<integer value="PpsC" />
+						<integer value="Ppab" />
+						<integer value="Pcab" />
+						<integer value="PrfG" />
+						<integer value="PlfG" />
+						<integer value="Phei" />
+						<integer value="Pwei" />
+					</list>
+				</widget>
+			</container>
+
+		</container>
+	</container>
+</panel>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel save_session_state="true">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	
+	<flags id="cham" value="tables/custom/league/champions/row" />
+	 
+	<container class="bordered_box" red_replacement="light_box_background" blue_replacement="light_box_border">
+		<layout class="arrange_vertical_attachment" layout="30,-1" inset="0" gap="2" offset="4" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" offset="0" apply_to_children="true" />
+
+        <container id="btns">
+			<layout class="arrange_horizontal_attachment" alignment="left, extend" gap="5" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+			<widget class="view_menu_label" height="30" auto_size="horizontal">
+				<translation id="text" translation_id="330376" type="use" value="Positions[COMMENT: Player comparison type header]" />
+			</widget>
+			<!-- Position select pop-up button, disabled by default -->
+			<widget class="view_menu_popup" id="posn" select_event="slpo" height="30" auto_size="none">
+				<boolean id="auto_tick_exclusive" value="true" />
+				<boolean id="fixed" value="false" />
+				<translation id="hint" translation_id="275854" type="use" value="Choose one of the players positions for your staff to evaluate him in.[COMMENT: tooltip; coach report]" />
+				<!-- Hide this because scout reports don't use it -->
+				<boolean id="hidden" value="true" />
+			</widget>
+        </container>
+
+        <container class="vertical_adaptive_container" id="comp" mode="distribute_equally" offset="0" inset="0" gap="0">
+
+			<container minimum_height="75" default_height="-1" priority="1">
+				<layout class="arrange_vertical_attachment" layout="15,-1" offset="0" gap="2" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="2" offset="0" apply_to_children="true" />
+
+				<widget class="text" auto_size="vertical" font="title" alignment="left,centre_y">
+					<translation id="text" translation_id="343330" type="use" value="Best Players[COMMENT: scout report panel label]" />
+				</widget>
+				<!-- Ability list table -->
+				<widget class="table" id="calL" mode="fill_rows,stripe_rows" layout="26,-5,-3">
+					<list id="column_properties">
+						<record indx="0" alignment="left,centre_y" colour="faded text"/>
+						<record indx="1" alignment="left,centre_y" />
+						<record indx="2" alignment="left,centre_y" />
+					</list>
+					<list id="column_display_properties">
+						<record indx="0" sort_disabled="true" left="5" />
+						<record indx="1" sort_disabled="true" />
+						<record indx="2" sort_disabled="true" />
+					</list>
+				</widget>
+			</container>
+
+			<container default_height="10" priority="1000" />
+
+			<container class="bordered_box" id="SMbx" appearance="boxes/bordered/solid/paper" default_height="95">
+				<layout class="arrange_vertical_attachment" layout="-1,-3" gap="6" offset="10" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="10" offset="0" apply_to_children="true" />
+
+				<widget class="label" alignment="left" id="suml" spec="text,large" size="11" style="bold" colour="white">
+					<translation id="text" translation_id="361268" type="use" value="Scout Summary[COMMENT: FR 8316]" />
+				</widget>
+				<widget class="text" id="SMtx" spec="text"  auto_size="vertical" colour="white"/>
+			</container>
+        </container>
+	</container>
+</panel>

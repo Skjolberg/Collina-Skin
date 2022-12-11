@@ -1,0 +1,94 @@
+   		<panel>
+  <container class="subsection_box" appearance="boxes/bordered/transparent/paper" id="SUBP">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+  </container>
+
+  <widget class="popup_button" id="popv"  auto_size="horizontal" height="20" click_event="msis" appearance="buttons/custom/customise panel/button" fixed="true">
+    <layout class="stick_to_sides_attachment" alignment="top,right" inset="6"/>
+  </widget>
+
+		
+		
+		<!-- Wing Play II -->		
+	<widget class="data_analyst_visualisation_widget" id="visWP2" hidden="true" visualisation_type="3" data_type="2"  category="12" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Wing Play II"/>
+		</widget> 
+
+  
+  		<!-- Wing Play I -->		
+	<widget class="data_analyst_visualisation_widget" id="visWP" hidden="true" visualisation_type="3" data_type="2"  category="5" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Wing Play I"/>
+		</widget> 
+  		
+  		<!-- Midfield -->		
+	<widget class="data_analyst_visualisation_widget" id="visM" hidden="true" visualisation_type="3" data_type="2"  category="8" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Midfield"/>
+		</widget> 
+	 
+	      <!-- Creativity II-->		
+	<widget class="data_analyst_visualisation_widget" id="visC2" hidden="true" visualisation_type="3" data_type="2"  category="10" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Creativity II"/>
+		</widget> 
+	   
+	    <!-- Defensive Midfielder-->		
+	<widget class="data_analyst_visualisation_widget" id="visDM" hidden="true" visualisation_type="3" data_type="2"  category="4" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Defensive Midfielder"/>
+		</widget> 
+		
+	  <!-- Goalkeeping -->		
+	<widget class="data_analyst_visualisation_widget" id="visG" hidden="true" visualisation_type="3" data_type="2"  category="17" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Goalkeeping"/>
+		</widget> 
+		
+  	<!-- Creativity I -->		
+	<widget class="data_analyst_visualisation_widget" id="visC1" hidden="true" visualisation_type="3" data_type="2"  category="7" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Creativity I"/>
+		</widget> 
+	
+	<!-- Attacking III -->	
+	<widget class="data_analyst_visualisation_widget" id="visA3" hidden="true" visualisation_type="3" data_type="2"  category="15" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Attacking III"/>
+		</widget> 
+	
+	<!-- Attacking II -->	
+	<widget class="data_analyst_visualisation_widget" id="visA2" hidden="true" visualisation_type="3" data_type="2"  category="14" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Attacking II"/>
+		</widget> 
+	
+	<!-- Attacking I -->	
+	<widget class="data_analyst_visualisation_widget" id="visA1" hidden="true" visualisation_type="3" data_type="2"  category="13" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Attacking I"/>
+		</widget> 
+		
+	<!-- Pressing -->	
+	<widget class="data_analyst_visualisation_widget" id="visP" hidden="true" visualisation_type="3" data_type="2"  category="6" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Pressing"/>
+		</widget> 
+		
+	<!-- Defending -->	
+	<widget class="data_analyst_visualisation_widget" id="visD" hidden="true" visualisation_type="3" data_type="2"  category="3" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="Defending"/>
+		</widget> 
+		
+	<!-- General Performance -->		
+	<widget class="data_analyst_visualisation_widget" id="visU4" hidden="true" visualisation_type="3" data_type="2"  category="11" file="widgets/data analyst visualisation profile">
+		<record id="object_property" get_property="objt" set_property="objt" />
+		<translation id="title" value="General"/>
+		</widget>
+		
+		
+		
+		</panel>

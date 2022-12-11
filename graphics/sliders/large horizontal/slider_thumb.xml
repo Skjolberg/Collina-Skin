@@ -1,0 +1,7 @@
+<!-- image properties -->
+<properties>
+
+	<colour id="red_replacement" name="slider_thumb"/>
+	<colour id="blue_replacement" name="slider_thumb_border"/>
+	
+</properties>

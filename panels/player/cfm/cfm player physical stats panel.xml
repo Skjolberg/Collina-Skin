@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container>
+		<layout class="arrange_vertical_attachment" alignment="top" offset="2" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<container height="15">
+			<layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+			<string id="skin_style" value="title link" />
+
+			<!-- Linked header -->
+			<widget class="link_button" id="link" section="Ptra" auto_size="horizontal">
+				<translation id="text" translation_id="247571" type="use" value="Fitness" />
+			</widget>
+		</container>
+
+		<!-- Spacer -->
+		<container height="2" />
+
+		<!-- Fitness text -->
+		<widget class="fitness_label" id="fitL" multiline="true" auto_size="vertical" size="large" style="semi_bold"/>
+		<!-- Expected time out for injury -->
+		<widget class="label" id="injD" auto_size="vertical" size="small" style="faded_text"/>
+
+    <!-- Fitness percentage / Condition percentage -->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+			<layout class="fit_children_attachment" alignment="vertical, fill" inset="0" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+			<widget class="editable_client_object_property_panel" id="conv" auto_size="all">
+				<record id="widget_info" class="condition_label" auto_size="all" ivih="false">
+					<translation id="format" translation_id="388549" type="use" value="[%number#1]% Overall Physical Condition[COMMENT:label for a player's overall physical condition, when taking every element of his game into account]" />
+				</record>
+				<record id="widget_properties" auto_size="all" />
+				<record id="object_property" get_property="Pcon" />
+			</widget>
+
+			<widget class="editable_client_object_property_panel" id="fitv" auto_size="all">
+				<record id="widget_info" class="condition_label" auto_size="all" ivih="false" mode="1">
+					<translation id="format" translation_id="389120" type="use" value="[%number#1]% Match Sharpness[COMMENT: label for the player's match fitness, i.e. what condition he's currently in if he were to be selected for the next fixture]" />
+				</record>
+				<record id="widget_properties" auto_size="all" />
+				<record id="object_property" get_property="Pfit" />
+			</widget>
+		</container>
+
+
+  </container>
+</panel>

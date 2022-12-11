@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel>  
+    <layout class="arrange_horizontal_attachment" alignment="fill" offset="0" gap="4"/>
+    <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+    <!-- Pros icons -->
+    <container class="bordered_box" appearance="boxes/custom/box_bg/paper" red_replacement="pro high">
+      <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="1"/>
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+      <!--title-->
+      <container class="bordered_box" height="20" appearance="boxes/bordered/standard/paper" red_replacement="pro high">
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+        <widget class="label" size="10" style="bold" colour="white">
+          <translation id="text" translation_id="361260" type="use" value="Pros[COMMENT: FR 8316 ]"/>
+        </widget>
+      </container>
+
+      <!-- Icons get inserted into here. The 'size' attribute is the size in pixels of each icon -->
+      <container class="scrolling_box">
+        <container id="mprT">
+          <layout class="arrange_vertical_attachment" alignment="top" />
+          <layout class="fit_children_attachment" alignment="vertical,fill"/>
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+          <integer id="size" value="25"/>
+          <record id="default_properties" multiline="true" colour="white"/>
+        </container>
+      </container>
+    </container>
+
+    <!-- Cons icons -->
+    <container class="bordered_box" appearance="boxes/custom/box_bg/paper" red_replacement="con high">
+      <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="1"/>
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+      <!--title-->
+      <container class="bordered_box" height="20" appearance="boxes/bordered/standard/paper" red_replacement="con high">
+        <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+        <widget class="label" size="10" style="bold" colour="white">
+          <translation id="text" translation_id="361094" type="use" value="Cons[COMMENT: FR 8316 ]"/>
+        </widget>
+      </container>
+
+      <!-- Icons get inserted into here. The 'size' attribute is the size in pixels of each icon -->
+      <container class="scrolling_box">
+        <container id="mcoT">
+          <layout class="arrange_vertical_attachment" alignment="top" />
+          <layout class="fit_children_attachment" alignment="vertical,fill"/>
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+          <integer id="size" value="25"/>
+          <record id="default_properties" multiline="true" colour="white"/>
+        </container>
+      </container>
+    </container>
+  
+
+</panel>

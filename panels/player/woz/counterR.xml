@@ -1,0 +1,21 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+  <container class="horizontal_adaptive_container" offset="0" inset="0" gap="0" mode="distribute_equally">
+    <container minimum_width="100" priority="1" default_width="-1">
+     	<layout class="arrange_horizontal_attachment" layout="-1" offset="0" gap="8" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+      <!-- Outfield player -->
+	  <container>
+	   <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+      <container class="person_attributes_analyser_panel" id="ofap" file="player/woz/dna_to" >
+        <record id="object_property" get_property="Pigo" />
+      </container>
+	  <widget class="picture" file="icons/custom/tactics/mentality/counter@2x" red_replacement="bg lighter" scale_picture="false" image_alignment="centre" />
+	  </container>
+	  
+    </container>
+	
+	</container>
+</panel>

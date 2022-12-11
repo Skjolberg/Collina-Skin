@@ -1,0 +1,125 @@
+<!-- panel displaying extra attributes a bout a player, for example condition, footedness etc -->
+<!-- Meant to be used with a CLIENT_OBJECT_XML_panel -->
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="top, extend" offset="10" gap="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+	<container id="topc">
+		<layout class="arrange_vertical_attachment" alignment="top" offset="" gap="0" do_not_size="true"/>
+		<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		<!-- Preferred Foot-->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+			<layout class="fit_children_attachment" alignment="vertical, fill" offset="4" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="5" apply_to_children="true" />
+
+			<widget class="label" id="Pfo:" auto_size="vertical" colour="bg custom green">
+				<record id="object_property" get_property="Pfot" name="true" />
+			</widget>
+			<widget class="foot_label" id="Pfot" auto_size="vertical" style="semi_bold">
+				<record id="object_property" get_property="Pfot" />
+
+
+			</widget>
+		</container>
+
+
+
+		   <!-- Actual Playing Time -->
+   <container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+			<layout class="fit_children_attachment" alignment="vertical, fill" offset="4" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="5" apply_to_children="true" />
+
+			<widget class="text" id="Ptla" auto_size="vertical" colour="bg custom green" alignment="left,centre_y">
+          <translation id="text" translation_id="492001" type="use" value="Actual Playing Time[COMMENT: AREA: Playing Time for Players; SUB-AREA: Contract Negotiations; FR-BN: 25975; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: concerns how much playing time a player is being promised]" />
+        </widget>
+
+				<widget class="client_object_property_panel" id="Ptva" property="Pctp" auto_size="vertical" style="semi_bold">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+					<record id="widget_properties" alignment="left,centre_y" auto_size="vertical" />
+				</widget>
+		</container>
+
+
+ <!-- Agreed Playing Time -->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+			<layout class="fit_children_attachment" alignment="vertical, fill" offset="4" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="5" apply_to_children="true" />
+
+			<widget class="text" id="Pptl" auto_size="vertical" colour="bg custom green" alignment="left,centre_y">
+        <translation id="text" translation_id="492002" type="use" value="Agreed Playing Time[COMMENT: AREA: Player Happiness; SUB-AREA: Contract Promises; FR-BN: 14013; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: contract promise type]" />
+      </widget>
+			<widget class="client_object_property_panel" id="Pptv" property="Pcpt" auto_size="vertical" style="semi_bold">
+				<record id="object_property">
+					<integer id="get_property" value="objt" />
+					<integer id="set_property" value="objt" />
+				</record>
+				<record id="widget_properties" alignment="left,centre_y" auto_size="vertical" />
+			</widget>
+		</container>
+
+    <!-- Goalkeeper rating -->
+    <container>
+      <layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+      <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="5" apply_to_children="true" />
+
+      <container id="GKRA">
+        <layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+        <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+        <record id="object_property" get_property="Pigo" set_property="hidn" />
+
+        <widget class="label" id="Pgk:" auto_size="vertical" colour="bg custom green">
+          <record id="object_property" get_property="PgkR" name="true" />
+        </widget>
+        <widget class="dashed_number_label" id="PgkR" auto_size="vertical" style="semi_bold">
+          <record id="object_property" get_property="PgkR" />
+        </widget>
+      </container>
+
+      <!-- Outfield rating -->
+      <container id="OFRA">
+        <layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+        <layout class="fit_children_attachment" alignment="vertical,fill" offset="4" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+        <record id="object_property" get_property="Pigo" set_property="Shwn" />
+
+        <widget class="label" id="Pof:" auto_size="vertical" colour="bg custom green">
+          <record id="object_property" get_property="PofR" name="true" />
+        </widget>
+        <widget class="dashed_number_label" id="PofR" auto_size="vertical" style="semi_bold">
+          <record id="object_property" get_property="PofR" />
+        </widget>
+      </container>
+    </container>
+
+    <widget class="picture" file="dividers/standard/horizontal/line" height="4" image_alignment="centre" />
+
+	</container>
+
+	<!-- Preferred moves -->
+	<container id="botc">
+		<layout class="arrange_vertical_attachment" alignment="top, extend" offset="0" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="5" apply_to_children="true" />
+
+		<widget class="label" auto_size="vertical" colour="bg custom green">
+			<translation id="text" translation_id="402385" type="use" value="Player Traits[COMMENT: label for the previously named 'Preferred Moves' section (ID 229993), changed to Player Traits because it fits all potential options more suitably]" />
+		</widget>
+
+		<container class="scrolling_box">
+			<widget class="preferred_moves_panel" file="player/player information preferred moves" id="pfmp" auto_size="vertical">
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</widget>
+		</container>
+	</container>
+</panel>

@@ -1,0 +1,14 @@
+﻿<!-- image properties -->
+<properties>
+
+	<!-- image slices determine the points at which the image will be sliced to enable scaling -->
+	<!-- the image will only slice in the directions slicing values are provided for-->
+	<record id="image_slices" left="10" right="10" />
+
+	<record id="font_spec">
+		<flags id="colour" value="bg"/> 
+	</record>
+
+	<colour id="red_replacement" name="bg custom green"/>
+
+</properties>

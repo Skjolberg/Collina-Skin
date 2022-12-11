@@ -1,0 +1,14 @@
+<panel>
+	<container class="subsection_box" appearance="boxes/bordered/standard/match rating" id="SUBP">
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</container>
+
+
+		
+	<widget class="preferred_moves_panel" id="pfmp" file="player/preferred moves" late_loading="true" >
+		<translation id="title" translation_id="229993" type="use" value="Preferred Moves" />
+			</widget>
+		
+	
+</panel>

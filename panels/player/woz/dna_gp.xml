@@ -1,0 +1,127 @@
+<panel>
+  <real id="segment_count" value="6" />
+  <boolean id="show_inaccurate_category" value="true" />
+
+  
+  <!-- Scale the polygon to fit the widget and draw it in code -->
+  <boolean id="scale_picture" value="true" />
+  <boolean id="fill_polygon" value="true" />
+	
+  <!-- First layer colour-->
+  <record id="line_style">
+    <colour id="colour" red="255" green="255" blue="255" alpha="200" />
+    <real id="width" value="2" />
+	<integer id="alpha" value="100" />
+  </record>
+  <!-- Second layer colour-->
+  <record id="second_colour">
+    <colour id="colour" name="red" />
+    <real id="width" value="1.2" />
+  </record>
+  <!-- Radial lines dividing each segment -->
+  <record id="segment_divider_line_props">
+    <colour id="colour" name="dna1" />
+    <real id="width" value="0.5" />
+  </record>
+    <!-- Radial lines dividing each segment -->
+  <record id="segment_divider_line_props">
+    <colour id="colour" red="100" green="100" blue="60" alpha="10" />
+    <real id="width" value="1.5" />
+  </record>
+  <!-- Style of the line around the edge of the polygon -->
+  <record id="polygon_edge_props">
+    <colour id="colour" name="dna1" />
+    <real id="width" value="1.5" />
+  </record>
+  <!-- Colours (and number) of the concentric polygon rings -->
+  <list id="ring_colours">
+    <colour red="120" green="120" blue="140" alpha="100"/>
+    <colour red="120" green="120" blue="140" alpha="85"/>
+    <colour red="120" green="120" blue="140" alpha="70"/>
+    <colour red="120" green="120" blue="140" alpha="55"/>
+    
+  </list>
+  
+  <list id="items">
+    <!-- layer 1 (there is only one) -->
+    <list>
+	
+	      <record id="item">
+		<translation id="name" translation_id="227803" type="use" value="Determination" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="30" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+		<flags id="size" value="small" />
+        <list id="attributes">
+          <integer value="Pdet" />
+        </list>
+      </record>
+	  
+      <record id="item">
+			<translation id="name" translation_id="227910" type="use" value="Teamwork" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="90" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+		  <flags id="size" value="small" />
+        <list id="attributes">
+          <integer value="Ptwr" />
+        </list>
+      </record>
+
+      <record id="item">
+        <real id="max_value" value="20" />
+        <integer id="angle" value="150" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+		  <flags id="size" value="small" />
+			<translation id="name" translation_id="227912" type="use" value="Work Rate" />
+        <list id="attributes">
+          <integer value="Pwkr" />
+        </list>
+      </record>
+	  
+	  	<record id="item">
+			<translation id="name" translation_id="248653" type="use" value="Balance[COMMENT - playing attribute]" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="210" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+		  <flags id="size" value="small" />
+
+        <list id="attributes">
+          <integer value="Pbal" />
+
+        </list>
+      </record>
+
+      <record id="item">
+			<translation id="name" translation_id="227898" type="use" value="Stamina" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="270" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+		  <flags id="size" value="small" />
+
+        <list id="attributes">
+          <integer value="Psta" />
+        </list>
+      </record>
+
+      <record id="item">
+			<translation id="name" translation_id="227769" type="use" value="Acceleration" />
+        <real id="max_value" value="20" />
+        <integer id="angle" value="330" />
+        <colour id="colour" name="text" />
+        <flags id="standard_spec" value="text" />
+		  <flags id="size" value="small" />
+
+        <list id="attributes">
+          <integer value="Pacc" />
+        </list>
+      </record>
+    </list>
+  </list>
+  <!-- outfield analyser panel -->
+</panel>

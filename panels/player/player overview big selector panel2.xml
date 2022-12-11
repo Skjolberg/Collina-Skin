@@ -1,0 +1,174 @@
+<panel>
+  <container class="subsection_box" appearance="boxes/bordered/transparent/paper" id="SUBP">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+  </container>
+
+  <widget class="popup_button" id="popv"  auto_size="horizontal" height="20" click_event="msis" appearance="buttons/custom/customise panel/button" fixed="true">
+    <layout class="stick_to_sides_attachment" alignment="top,right" inset="6"/>
+  </widget>
+
+  <widget class="person_history_biography_panel" id="phba" file="person/person history biography no title" late_loading="true">
+    <translation id="title" translation_id="295868" type="use" value="Biography[COMMENT: player history panel; title of biography titled box]" />
+  </widget>
+
+
+  <widget file="player/player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel" late_loading="true">
+    <translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
+  </widget>
+  <widget class="person_happiness_panel" file="player/a person plan and happiness" id="Plhp" late_loading="true">
+    <translation id="title" translation_id="330319" type="use" value="Player Happiness[COMMENT: team training overview; column header text which indicates a player's satisfaction with their training regimen]" />
+
+      </widget>
+
+     <widget class="player_scout_reports_panel" id="psrt" file="player/comparison" late_loading="true" valid_for_unemployed_managers="false" valid_for_international_managers_other_team="false">
+    <translation id="title" translation_id="248428" type="use" value="Comparison" />
+  </widget>
+
+
+  <widget class="player_contract_panel" id="pcon" file="player/tcs/overview/selector/big/contract" late_loading="true" valid_for_unemployed_player="false">
+		<translation id="title" translation_id="230163" type="use" value="Contract" />
+	</widget>
+
+	<!-- Positions-->
+				<widget class="player_positions_indicator_panel" id="ppi1" file="player/player positions indicator small horizontal" late_loading="true" valid_for_unemployed_managers="false" valid_for_international_managers_other_team="false">
+				  <translation id="title" translation_id="230082" type="use" value="Positions" />
+				</widget>
+
+         <widget class="playing_history_summary_panel" id="Pcrs"  file="player/playing history summary small vertical" late_loading="true">
+          <translation id="title" translation_id="247605" type="use" value="Career Stats" />
+        </widget>
+
+
+	<widget class="player_scout_reports_panel" id="hefr" file="player/heffem player report" late_loading="true" valid_for_unemployed_managers="false" valid_for_international_managers_other_team="false">
+    <translation id="title" translation_id="248079" type="use" value="Report" />
+	</widget>
+
+		<widget class="player_personal_details_panel" id="gzpD" file="player/gunzo/gunzo player profile tab4" late_loading="true">
+    <translation id="title" translation_id="227737" type="use" value="Club" />
+  </widget>
+
+
+		<widget class="player_training_stats_panel" id="pTTS" late_loading="true" valid_for_international_managers_other_team="false" valid_for_other_team_managers="false" valid_for_unemployed_managers="false">
+    <translation id="title" translation_id="242773" type="use" value="Training" />
+  </widget>
+
+<widget class="player_training_information" id="ySts" file="player/yacs training big" late_loading="true">
+		<translation id="title" translation_id="363655" type="use" value="Individual Training[COMMENT: training players panel, column heading for Individual Training Focus]" />
+	</widget>
+	<widget class="player_tactical_familiarity_panel" id="tcTf" late_loading="true" valid_for_international_managers_other_team="false" valid_for_other_team_managers="false" valid_for_unemployed_managers="false" file="player/tac fam">
+		<translation id="title" translation_id="380859" type="use" value="Tactical Familiarity[COMMENT: how to system; help string, title]" />
+	</widget>
+
+	<widget class="player_training_information" id="yTri" file="player/yacs traits only w HS" late_loading="true">
+    <translation id="title" translation_id="402385" type="use" value="Player Traits[COMMENT: label for the previously named 'Preferred Moves' section (ID 229993), changed to Player Traits because it fits all potential options more suitably]" />
+	</widget>
+
+	<widget class="person_personal_information_panel" id="ypib" file="player/yacs information"  late_loading="true">
+    <translation id="title" translation_id="232994" type="use" value="Info[COMMENT: player popup info panel - scout current ability rating]" />
+	</widget>
+
+	<widget class="player_availability_panel" file="player/player availability" id="pavl" late_loading="true">
+		<translation id="title" translation_id="227764" type="use" value="Player Status" />
+	</widget>
+
+	 <widget class="client_object_viewer_xml_panel" file="player/custom/person achievements summary1" id="pacs" auto_size="vertical" priority="4">
+		  <translation id="title" translation_id="251258" type="use" value="Awards[COMMENT: manager stats screen; column heading text for number of awards won]" />
+          <record id="object_property">
+            <integer id="get_property" value="objt" />
+            <integer id="set_property" value="objt" />
+          </record>
+        </widget>
+
+		 <widget class="player_injury_panel" id="psce" file="player/player condition hint panel1" late_loading="true" >
+  	<translation id="title" translation_id="450786" type="use" value="Physical Status[COMMENT: FR20159; player injuries panel; panel title for displaying location of injury]"/>
+		  </widget>
+
+
+ <widget class="player_scout_reports_panel" id="toxG" file="player/selector/xg" late_loading="true" >
+		<translation id="title"  value="xG" />
+	</widget>
+
+
+  <widget file="player/player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel" late_loading="true">
+    <translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
+  </widget>
+  <widget class="person_happiness_panel" file="player/a person plan and happiness" id="Plhp" late_loading="true">
+    <translation id="title" translation_id="330319" type="use" value="Player Happiness[COMMENT: team training overview; column header text which indicates a player's satisfaction with their training regimen]" />
+      </widget>
+
+
+
+						<widget class="work_permit_panel" id="work" late_loading="true">
+							<translation id="title" translation_id="242863" type="use" value="Work Permit" />
+
+						</widget>
+
+
+		<widget class="player_personal_details_panel" id="gzpD" file="player/gunzo/gunzo player profile tab4" late_loading="true">
+    <translation id="title" translation_id="227737" type="use" value="Club" />
+  </widget>
+
+  <widget class="client_object_viewer_xml_panel" id="atT3" file="player/player additional attributes hidden" late_loading="true">
+    <translation id="title" translation_id="361135" type="use" value="Hidden Attributes[COMMENT: attirbute filters; hidden attributes filterable in the editor]" />
+  </widget>
+
+
+		<widget class="player_training_stats_panel" id="pTTS" late_loading="true" valid_for_international_managers_other_team="false" valid_for_other_team_managers="false" valid_for_unemployed_managers="false">
+    <translation id="title" translation_id="242773" type="use" value="Training" />
+  </widget>
+
+<widget class="player_training_information" id="ySts" file="player/yacs training big" late_loading="true">
+		<translation id="title" translation_id="363655" type="use" value="Individual Training[COMMENT: training players panel, column heading for Individual Training Focus]" />
+	</widget>
+	<widget class="player_tactical_familiarity_panel" id="tcTf" late_loading="true" valid_for_international_managers_other_team="false" valid_for_other_team_managers="false" valid_for_unemployed_managers="false" file="player/tac fam">
+		<translation id="title" translation_id="380859" type="use" value="Tactical Familiarity[COMMENT: how to system; help string, title]" />
+	</widget>
+
+	<widget class="player_training_information" id="yTri" file="player/yacs traits only w HS" late_loading="true">
+    <translation id="title" translation_id="402385" type="use" value="Player Traits[COMMENT: label for the previously named 'Preferred Moves' section (ID 229993), changed to Player Traits because it fits all potential options more suitably]" />
+
+	</widget>
+
+
+
+	<widget class="player_availability_panel" file="player/player availability" id="pavl" late_loading="true">
+		<translation id="title" translation_id="227764" type="use" value="Player Status" />
+	</widget>
+
+	 <widget class="client_object_viewer_xml_panel" file="player/custom/person achievements summary1" id="pacs" auto_size="vertical" priority="4">
+		  <translation id="title" translation_id="251258" type="use" value="Awards[COMMENT: manager stats screen; column heading text for number of awards won]" />
+          <record id="object_property">
+            <integer id="get_property" value="objt" />
+            <integer id="set_property" value="objt" />
+          </record>
+        </widget>
+
+		 <widget class="player_injury_panel" id="psce" file="player/player condition hint panel1" late_loading="true" >
+  	<translation id="title" translation_id="450786" type="use" value="Physical Status[COMMENT: FR20159; player injuries panel; panel title for displaying location of injury]"/>
+		  </widget>
+
+
+	<widget class="player_additional_stats_panel" id="TAdS" file="player/additional stats big" late_loading="true" valid_for_unemployed_player="false">
+			  <translation id="title" value="Additional Stats" />
+		</widget>
+
+	<container class="client_object_viewer_xml_panel" id="dnap" file="player/woz/player attribute analyser panel dna" dont_set_embedded_title="true" late_loading="true" priority="1">
+					 <translation id="title" type="use" value="DNA" />
+					 <record id="object_property" get_property="objt" set_property="objt"/>
+			</container>
+
+
+			<!-- Transfer Information -->
+	<widget class="player_scout_reports_panel" id="ptrl" file="player/FME/player transfer information" valid_for_unemployed_player="false" valid_for_international_managers_other_team="false" valid_for_unemployed_managers="false">
+		<translation id="title" translation_id="251898" type="use" value="Transfer Information[COMMENT: scout report panel box heading]"/>
+	</widget>
+
+		<container id="stlR" class="client_object_viewer_xml_panel" file="player/woz/styles R" save_session_state="true" late_loading="true" default_width="-1" >
+		<translation id="title" translation_id="469119" type="use" />
+		<record id="object_property" get_property="objt" set_property="objt"/>
+	</container>
+
+
+
+</panel>

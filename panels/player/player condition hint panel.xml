@@ -1,0 +1,58 @@
+﻿<panel width="300" >
+	<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" vertical_offset="25"/>
+
+	<container class="standard_popup_box"  >
+		<attachment_group class="vertical_arrange_autosize" horizontal_inset="0" vertical_gap="3" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="-1" horizontal_offset="6"/>
+
+			<widget class="pie_condition_label" id="piec" height="40" mode="2" file="" colour="white">
+			<layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0"/>
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+			<record id="object_property" get_property="PRCF" set_property="valu"/>
+
+			<!--pie-->
+			<container width="60">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+
+				<!--the way layout works for donut chart is a replacement for donut_line_width, the first value is the prportion
+    for the centre empty space the second value for the line width and the third/rest of values for the gap in the
+    outer space of the donut chart-->
+				<widget class="percentage_pie_chart" id="piec" max_value="100" is_donut_chart="true" layout="-1,4,4"/>
+				<widget class="percentage_pie_chart" id="inPI" max_value="100" is_donut_chart="true" layout="-1,4,10"/>
+			</container>
+
+			<!--descriptions-->
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="middle" offset="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+				<widget class="condition_label" id="CDLB" auto_size="vertical" alignment="left,centre_y,can_scale" colour="white">
+					<translation id="format" translation_id="450112" type="use" value="[%number#1]% overall condition[COMMENT: FR 20159; team risk assessment panel; players condition label]" />
+				</widget>
+				<widget class="condition_label" id="FTLB" auto_size="vertical" alignment="left,centre_y,can_scale" colour="white">
+					<translation id="format" translation_id="450113" type="use" value="[%number#1]% match sharpness[COMMENT: FR 20159; team risk assessment panel; players match sharpness label]" />
+				</widget>
+			</container>
+		</widget>
+		
+		</container>
+
+		<!--injury status-->
+		<widget class="player_injury_panel"  file="player/player injury panel condition hint1" >
+			<record id="auto_size_restrictions">
+				<string id="type" value="value" />
+				<integer id="value" value="300" />
+				<string id="limit_type" value="minimum" />
+				<string id="orientation" value="vertical" />
+			</record>
+			<record id="object_property" get_property="objt" set_property="objt" />
+		</widget>
+		
+		<container height="1"/>
+
+	</container>
+
+</panel>

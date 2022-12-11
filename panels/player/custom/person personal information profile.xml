@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="scrolling_box" id="test">
+		<container>
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+			<layout class="arrange_horizontal_attachment" layout="-3,-4" alignment="left" offset="2" gap="8" />
+			<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+			<container class="plain_box" >
+				<layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+				<layout class="arrange_horizontal_attachment" alignment="fill" offset="6" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+				<widget class="table" id="left" layout="-1" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" auto_size="vertical">
+					<list id="row_properties">
+						<record indx="0" row_height="22" />
+						<record indx="1" row_height="20" />
+						<record indx="2" row_height="22" />
+						<record indx="3" row_height="20" />
+						<record indx="4" row_height="22" />
+						<record indx="5" row_height="20" />
+						<record indx="6" row_height="22" />
+						<record indx="7" row_height="20" />
+						<record indx="8" row_height="22" />
+						<record indx="9" row_height="20" />
+						<record indx="10" row_height="22" />
+						<record indx="11" row_height="20" />
+						<record indx="12" row_height="22" />
+						<record indx="13" row_height="20" />
+						<record indx="14" row_height="22" />
+						<record indx="15" row_height="20" />
+						<record indx="16" row_height="22" />
+						<record indx="17" row_height="20" />
+						<record indx="18" row_height="22" />
+						<record indx="20" row_height="22" />
+						<record indx="22" row_height="22" />
+						<record indx="23" row_height="20" />
+					</list>
+					<!-- full name -->
+					<widget class="label" col="0" row="0" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="247452" type="use" value="Full Name" />
+					</widget>
+					<widget class="text" id="namw" col="0" row="1" size="10" alignment="left, top"/>
+					<!-- Place of Birth -->
+					<widget class="label" id="cobp" col="0" row="2" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="227960" type="use" value="Place Of Birth" />
+					</widget>
+					<widget class="place_of_birth_label" id="cobw" col="0" row="3" size="10" alignment="left, top"/>
+					<!-- languages -->
+					<widget class="label" col="0" row="4" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="295874" type="use" value="Languages Spoken" />
+					</widget>
+					<widget class="languages_text" id="lngw" col="0" row="5" spec="text" size="10"/>
+					<!-- reputation -->
+					<widget class="label" col="0" row="6" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="227963" type="use" value="Reputation" />
+					</widget>
+					<widget class="text" id="repw" col="0" row="7" spec="text" size="10" />
+					<!-- media description -->
+					<widget class="label" id="medi" col="0" row="8" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="319499" type="use" value="Media Description[COMMENT: personal information screen; text indicating a person's media description]" />
+					</widget>
+					<widget class="player_description_text" id="medt" col="0" row="9" spec="text" size="10" />
+					<!-- similar players "dubbed the new Ronaldo!" -->
+					<widget class="label" col="0" row="10" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="247714" type="use" value="Media Comparison[COMMENT: player_profile_panel_title; current legendary player this player is similar to]" />
+					</widget>
+					<widget class="text" id="meco" col="0" row="11" spec="text" size="10" />
+					<!-- similar players "similar type of player to" -->
+					<widget class="label" col="0" row="12" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="255081" type="use" value="Team-mate Comparison[COMMENT: player_profile_panel_title; team-mate who is a similar type of player]" />
+					</widget>
+					<widget class="text" id="teco" col="0" row="13" spec="text" size="10" />
+					<!-- Agent -->
+					<widget class="label" col="0" row="14" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="308473" type="use" value="Agent" />
+					</widget>
+					<widget class="text" id="agne" col="0" row="15" spec="text" size="10" />
+					<!-- coaching qualifications -->
+					<widget class="label" col="0" row="16" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="329843" type="use" value="Coaching Qualifications[COMMENT: non-player profile; coaching qualification]" />
+					</widget>
+					<widget class="text" id="coaq" col="0" row="17" spec="text" size="10" />
+					<!-- favoured clubs -->
+					<widget class="label" col="0" row="18" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="247453" type="use" value="Favoured Clubs" />
+					</widget>
+					<widget class="favourite_clubs_text" id="fvcw" col="0" row="19" spec="text" size="10" />
+					<!-- favoured persons -->
+					<widget class="label" colour="gold" col="0" row="20" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="247454" type="use" value="Favoured Personnel" />
+					</widget>
+					<widget class="favourite_personel_text" id="fvpw" col="0" row="21" auto_size="vertical" spec="text" size="10" />
+					<!-- based in nation -->
+					<widget class="label" col="0" row="22" colour="gold" size="8" alignment="left, bottom">
+						<translation id="text" translation_id="376424" type="use" value="Based In[COMMENT: player personal information; nation player is based in]" />
+					</widget>
+					<widget class="nation_button" id="natB" col="0" row="23" icon_enabled="true" spec="text" size="10" alignment="left, top" />
+
+
+					<!-- media description
+					<widget class="label" colour="gold" id="medi" col="0" row="2" alignment="left, bottom" size="8">
+					  <translation id="text" translation_id="319499" type="use" value="Media Description[COMMENT: personal information screen; text indicating a person's media description]" />
+					</widget>
+					<widget class="player_description_text" id="medt" col="0" row="3" auto_size="vertical" spec="text" size="11.5" />-->
+
+					<!-- personality
+					<widget class="label" colour="faded text" col="0" row="4" alignment="left, bottom" size="9">
+					  <translation id="text" translation_id="247713" type="use" value="Personality" />
+					</widget>
+					<widget class="text" id="perw" col="0" row="5" auto_size="vertical" spec="text" size="11.5" /> -->
+
+
+					<!-- Media handling
+					<widget class="label" colour="faded text" col="0" row="4" alignment="left, bottom" size="9">
+					  <translation id="text" translation_id="291327" type="use" value="Media Handling Style[COMMENT: player transfer panel; how staff handles media]" />
+					</widget>
+					<widget class="media_handling_label" id="mhst" col="0" row="5" auto_size="vertical" spec="text" size="11.5" />-->
+
+
+					<!-- past experience
+					<widget class="label" colour="faded text" col="0" row="10" alignment="left, bottom" size="9">
+					  <translation id="text" translation_id="319440" type="use" value="Past Playing Experience[COMMENT: add_manager_panel; select starting reputation; define past football experience]" />
+					</widget>
+					<widget class="past_experience_label" id="paex" col="0" row="11" auto_size="vertical" spec="text" size="11.5" />-->
+
+					<!-- offers (only shown here for non players)
+					<widget class="label" colour="faded text" col="0" row="12" alignment="left, bottom" size="9">
+					  <translation id="text" translation_id="247457" type="use" value="Offers" />
+					</widget>
+					<widget class="text" id="offw" col="0" row="13" auto_size="vertical" spec="text" size="11.5" /> -->
+
+					<!-- manager relationship with you (only shown here for non players
+					<widget class="label" colour="faded text" col="0" row="14" alignment="left, bottom" size="9">
+					  <translation id="text" translation_id="243508" type="use" value="Relationship With You" />
+					</widget>
+					<widget class="relationship_label" id="mryw" display_format="0" col="0" row="15" auto_size="vertical" spec="text" size="11.5" />-->
+
+				</widget>
+			</container>
+
+
+			<container height="650" class="plain_box" >
+				<layout class="arrange_vertical_attachment" layout="0,-1,-1" offset="0" gap="8" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+				<!-- Position pitch for players -->
+				<container class="plain_box" id="posa">
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="4" />
+					<widget class="player_positions_indicator_panel" file="player positions indicator horizontal" id="ppov">
+						<record id="object_property">
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+				</container>
+				<!-- Games played in position for players-->
+				<container class="subsection_box" id="gppC" appearance="boxes/subsection/transparent/paper">
+					<translation id="title" translation_id="257322" type="use" value="Games Played In Position" />
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+					<widget class="player_games_in_position_panel" id="pgpp">
+						<record id="object_property">
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+				</container>
+				<!-- Preferred moves (players)-->
+				<container class="subsection_box" id="ppm1" appearance="boxes/subsection/transparent/paper">
+					<translation id="title" translation_id="229993" type="use" value="Preferred Moves" />
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+					<widget class="preferred_moves_panel" file="player information preferred moves" id="pfmp">
+						<record id="object_property">
+							<integer id="get_property" value="objt" />
+							<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+				</container>
+			</container>
+
+
+
+
+
+			<widget class="table" width="400" id="rigt" layout="-1" mode="fill_rows" auto_size_rows="true" fixed_size_rows="false" auto_size="vertical">
+
+
+
+
+
+
+			</widget>
+
+
+  </container>
+  </container>
+</panel>

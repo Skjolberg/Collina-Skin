@@ -1,0 +1,30 @@
+<panel>
+  <container id="SUBP" class="subsection_box" appearance="">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+    <layout class="stick_to_sides_attachment" alignment="all" inset="15" />
+  </container>
+
+  <widget class="popup_button" id="popv" auto_size="horizontal" height="18" click_event="msis" appearance="" fixed="true">
+    <layout class="stick_to_sides_attachment" alignment="top,right" inset="5" />
+  </widget>
+
+
+<widget class="client_object_viewer_xml_panel" id="paAn"  file="player/player attribute analyser panel">
+<translation id="title" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" type="use" translation_id="334971"/>
+</widget>
+
+
+<widget class="player_attributes_panel" id="pat3" late_loading="true" file="player/cfm/cfm player attributes boxes panel" highlight_attributes="true">
+        <translation id="title" type="use" value="Attributes in Boxes" />
+        </widget>
+
+
+
+  <widget class="data_analyst_visualisation_widget" id="visC" visualisation_type="3" data_type="2" category="11" file="player/data analyst visualisation mini">
+					<record id="object_property" get_property="objt" set_property="objt" />
+          <translation id="title" type="use" value="Data Analyst" />
+
+
+				</widget>
+
+</panel>

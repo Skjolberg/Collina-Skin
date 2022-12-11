@@ -1,0 +1,72 @@
+﻿<panel>
+	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="5" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+
+
+	<!-- PLAYING TIME PATHWAY HEADER -->
+	
+		<container height="15">
+			<layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+		<string id="skin_style" value="title link" />
+	<widget class="link_button"  auto_size="horizontal" id="DIwp" section="DIwp">
+		<translation id="text" translation_id="509193" type="use" value="Player Discussion Topics" />
+	</widget>
+	
+    </container>
+
+    <container id="phit" >
+        <attachment_group class="vertical_arrange" vertical_alignment="top, fill"/>
+
+        <container class="plain_box" appearance="boxes/bordered/standard/paper">
+            <attachment_group class="vertical_arrange_autosize"/>
+
+            <container class="client_object_viewer_xml_panel" id="diPE">
+                <attachment_group class="horizontal_arrange_vertical_autosize_centre" auto_size="horizontal"/>
+
+                <widget class="object_portrait_picture" id="plpc" auto_size="all" width="45" height="45" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre">
+                    <record id="object_property" get_property="objt" set_property="objt"/>
+                </widget>
+
+                <!-- person name -->
+                <widget class="person_button_with_job_description" id="pnam" width="200" height="45" spec="text" style="bold" alignment="left" size="14" info_popup_enabled="true">
+                    <record id="object_property" get_property="objt" set_property="valu"/>
+                </widget>
+
+                <container class="plain_box" width="10">
+                    <attachment_group class="vertical_arrange_autosize"/>
+                </container>
+
+                <container class="plain_box" width="500" appearance="boxes/bordered/standard/paper26"  alignment="left" blue_replacement="green 400">
+                    <attachment_group class="vertical_arrange_autosize"/>
+                    <widget class="text" id="stQU" height="45" alignment="left, centre_y">
+                    </widget>
+                </container>
+            </container>
+        </container>
+
+        <container class="scrolling_box">
+
+            <container class="plain_box" >
+                <attachment_group class="vertical_arrange_autosize"/>
+
+                <container class="plain_box" id="QCbo" appearance="boxes/inner/subtle/paper" colour="text" size="large">
+                    <translation id="title" translation_id="509194" type="use" value="Quick Chat[COMMENT: AREA: Player Discussion; SUB-AREA: Title text; FR-BN: n/a; TONE: Formal; CHARLIMIT: n/a; REF-ID: n/a; NOTE: appears as a title for a range of options]"/>
+                    <attachment_group class="vertical_arrange_autosize"/>
+
+                    <!-- quick chat topics added here -->
+                </container>
+
+                <container class="plain_box" id="PCbo" appearance="boxes/inner/subtle/paper" colour="text" size="large">
+                    <translation id="title" translation_id="312505" type="use" value="Private Chat[COMMENT: have a chat with own of your players]"/>
+                    <attachment_group class="vertical_arrange_autosize"/>
+
+                    <!-- private chat topics added here -->
+                </container>
+            </container>
+        </container>
+    </container>
+
+</panel>

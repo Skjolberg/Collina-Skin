@@ -1,0 +1,101 @@
+ <!-- panel displaying extra attributes a bout a player, for example condition, footedness etc -->
+<!-- Meant to be used with a CLIENT_OBJECT_XML_panel -->
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+  <layout class="arrange_vertical_attachment" alignment="top, extend" offset="28" gap="0"/>
+
+
+ <widget class="client_object_label_value_table"  auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+					<record id="table_properties" layout="-5, -2"   mode="fill_rows, stripe_rows" >
+					<list id="column_widget_properties">
+						<record indx="0"  colour="accent" size="11" alignment="left,centre_y" />
+						<record indx="1" font="title" style="shadowed" size="10.5" colour="accent" alignment="centre_y" />
+					</list>
+						<integer id="row_spacing" value="4"  />
+
+
+					</record>
+					<list id="viewed_property_ids">
+
+						<integer value="Pnar" />
+						<integer value="PCAB" />
+						<integer value="PPAB" />
+							</list>
+
+
+				</widget>
+				 <widget class="spacer" height="8" />
+
+				  	   <widget class="client_object_label_value_table"  auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+					<record id="table_properties" layout="-5, -2"  mode="fill_rows, stripe_rows" >
+					<list id="column_widget_properties">
+
+						<record indx="0"   style="shadowed" size="9" alignment="left,centre_y" />
+						<record indx="1" font="title" style="shadowed" size="10.5" colour="accent" alignment="centre" />
+					</list>
+
+								</record>
+					<list id="viewed_property_ids">
+
+						<integer value="ERCA" />
+
+							</list>
+								</widget>
+
+
+
+
+
+						<widget class="picture" file="custom/divider1" height="3"  image_alignment="centre" />
+
+
+						    <widget class="label" colour="accent" font="title" size="8.5">
+      <string id="text" value="General"/>
+    </widget>
+
+						  <widget class="client_object_label_value_table" auto_size="vertical">
+					<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+					<record id="table_properties" layout="-5, -2"   mode="fill_rows, stripe_rows" >
+					<list id="column_widget_properties">
+						<record indx="0" style="shadowed" size="10" alignment="left,centre_y" />
+						<record indx="1" font="title" style="shadowed" size="10.5" colour="accent" alignment="centre_y" />
+					</list>
+						<integer id="row_spacing" value="3.5"  />
+
+
+					</record>
+					<list id="viewed_property_ids">
+						<integer value="PCRP" />
+						<integer value="Pada" />
+						<integer value="Pamb" />
+						<integer value="Ploy" />
+						<integer value="Ppre" />
+						<integer value="Ppro" />
+						<integer value="Ptem" />
+						<integer value="Pcvy" />
+						<integer value="PCON" />
+						<integer value="Pdir" />
+						<integer value="pimp" />
+						<integer value="Pipr" />
+					</list>
+
+
+				</widget>
+
+
+
+
+
+
+</panel>

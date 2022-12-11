@@ -1,0 +1,34 @@
+﻿<panel save_session_state="true" save_default_state="true" draw_horizontal_dividers="true">
+
+
+	<flags id="cham" value="tables/custom/league/champions/row" />
+
+	<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" >
+		<global id="gap" name="ui.main_box_gap"/>
+	</layout>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-1" offset="0">
+			<global id="gap" name="ui.main_contrast_box_gap"/>
+		</layout>
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+        <container id="midd" navigation_container="true" default_focus="true">
+			<layout class="arrange_vertical_attachment" layout="-1" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+				<widget class="player_additional_stats_panel" id="staP" file="player/player additional stats mini report">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</widget>
+				<widget class="data_analyst_visualisation_widget" id="visU" hidden="true" visualisation_type="3" data_type="2"  category="5" file="widgets/woz/data analyst visualisation large">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</widget>
+			</container>
+		</container>
+
+	</container>
+
+</panel>

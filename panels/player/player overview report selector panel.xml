@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel >
+  <container class="bordered_box"  id="SUBP">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+  </container>
+
+  <widget class="person_history_biography_panel" id="phb1" file="person/person history biography no title" late_loading="true">
+    <translation id="title" translation_id="295868" type="use" value="Biography[COMMENT: player history panel; title of biography titled box]" />
+  </widget>
+
+  	<widget class="player_scout_reports_panel" id="hefr" file="player/player report" late_loading="true" valid_for_unemployed_managers="false" valid_for_international_managers_other_team="false">
+		<translation id="title" translation_id="248079" type="use" value="Report" />
+	</widget>
+
+
+	<widget class="player_scout_reports_panel" id="data" file="player/data analysis" late_loading="true" valid_for_unemployed_player="false">
+		<translation id="title" type="use" value="Data Analysis" />
+	</widget>
+
+
+</panel>

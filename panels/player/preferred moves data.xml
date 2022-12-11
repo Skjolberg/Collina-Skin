@@ -1,0 +1,34 @@
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
+	<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" />
+		
+		<container class="inner_box">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" />
+			
+			<container class="player_attributes_panel" file="none">
+				<record id="object_property" get_property="objt" set_property="objt" />
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" />
+				<widget class="preferred_moves_panel" auto_size="vertical" file="player/player information preferred moves" id="pfmp">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</widget>
+				<container hidn="true">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" />
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="Ptrt" />
+								<integer id="set_property" value="Shwn" />
+							</record>
+						</list>
+					</record>
+					
+					
+					
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

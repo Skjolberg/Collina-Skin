@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	<container>
+		<layout class="arrange_vertical_attachment" layout="100, 355, -1" offset="0" gap="1" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+			<container>
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+				<layout class="arrange_horizontal_attachment" layout="-1, 1, -1, 1, -1" offset="0" gap="10" />
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="2" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+					<widget class="text" auto_size="vertical" font="title">
+						<translation id="text" translation_id="394545" type="use" value="Position/Role[COMMENT: individual player training header text]" />
+					</widget>
+					<widget class="individual_training_popup" id="itpu" show_table_legend="true" fixed="false" alignment="left,centre_y" auto_size="none" height="30">
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="PTif" />
+									<integer id="set_property" value="valu" />
+								</record>
+							</list>
+						</record>
+					</widget>
+					<widget class="text" id="porC" auto_size="vertical" height="40" size="small" colour="faded text" />
+				</container>
+				<widget class="picture" file="dividers/standard/vertical/line" scale_picture="false" />
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="2" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+					<widget class="text" auto_size="vertical" font="title">
+						<translation id="text" translation_id="394317" type="use" value="Additional Focus[COMMENT - individual training popup menu; specific focus training]" />
+					</widget>
+					<widget class="individual_training_popup" show_table_legend="true"  is_attribute_training="true" fixed="false"  id="itat" alignment="left,centre_y" auto_size="none" height="30">
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="PTaf" />
+									<integer id="set_property" value="valu" />
+								</record>
+							</list>
+						</record>
+					</widget>
+					<widget class="text" id="adFC" auto_size="vertical" size="small" colour="faded text" />
+				</container>
+				<widget class="picture" file="dividers/standard/vertical/line" scale_picture="false" />
+				<container id="nPMC">
+					<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="5" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+					<widget class="label" alignment="left,centre_y" auto_size="vertical" font="title" colour="accent">
+						<translation id="text" translation_id="330256" type="use" value="New Preferred Move[COMMENT: new preferred move label on player training screen]" />
+					</widget>
+					<container height="30">
+						<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="0" />
+						<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+						<widget class="preferred_move_label" id="ppML" alignment="left,centre_y" auto_size="none" height="30">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="PTpm" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</widget>
+						<widget class="preferred_move_popup_button" id="nPPM" appearance="buttons/standard/normal/button" alignment="left,centre_y" auto_size="none" height="30">
+							<record id="object_property">
+								<list id="get_properties">
+									<record>
+										<integer id="get_property" value="PmCo" />
+										<integer id="set_property" value="valu" />
+									</record>
+								</list>
+							</record>
+						</widget>
+						<widget class="button" hidden="true" click_event="PPMC" id="cPPM" size="8" alignment="left,centre_y" auto_size="vertical">
+							<translation id="text" translation_id="229828" type="use" value="Cancel" />
+						</widget>
+					</container>
+					<widget class="text" id="prMC" auto_size="vertical" size="small" colour="faded text" />
+				</container>
+			</container>
+		</container>
+
+ 
+    <container>
+      <layout class="arrange_horizontal_attachment" layout="-1, -1" offset="0" gap="1" />
+      <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+
+
+      <!-- workload report -->
+      <container class="subsection_box" appearance="boxes/subsection/transparent/paper">
+        <!-- coach/physio menus -->
+        <container id="btna" embed_in_frame="true">
+          <layout class="arrange_horizontal_attachment" alignment="left" embed_in_frame="true" gap="8" offset="5" />
+          <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" embed_in_frame="true" />
+          <layout class="stick_to_sides_attachment" alignment="top, left" embed_in_frame="true" inset="5" />
+          <layout class="fit_children_attachment" alignment="vertical" embed_in_frame="true" />
+          <layout class="fit_children_attachment" alignment="horizontal, fill" embed_in_frame="true" />
+
+          <widget class="view_menu_label" width="90" embed_in_frame="true" alignment="left, centre_y" auto_size="horizontal" colour="accent">
+            <translation id="text" translation_id="395296" type="use" value="Progress Report:[COMMENT:player training; header feedback from coachs]" />
+          </widget>
+          <widget class="popup_button" id="vcoa" auto_tick_exclusive="true" auto_size="horizontal" select_event="view" embed_in_frame="true" save_session_state="true">
+            <translation id="text" translation_id="308602" type="use" value="Coach[COMMENT - player training screen menu for selecting coach for the report]" />
+          </widget>
+          <widget class="popup_button" id="vphy" auto_tick_exclusive="true" auto_size="horizontal" select_event="view" embed_in_frame="true" save_session_state="true">
+            <translation id="text" translation_id="308603" type="use" value="Physio[COMMENT - player training screen menu for selecting physio for the report]" />
+          </widget>
+        </container>
+
+        <layout class="arrange_vertical_attachment" layout="-1" inset="0" offset="0" gap="0" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+        <!-- coach comments -->
+        <container class="scrolling_box">
+          <widget class="text" id="tcml" auto_size="vertical" />
+        </container>
+
+        
+
+      </container>
+
+      <container>
+        <layout class="arrange_vertical_attachment" alignment="top, extend" offset="0" gap="2" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+	   <widget class="label" colour="accent" alignment="left,centre_y" auto_size="all" font="title">
+          <translation id="text" translation_id="395255" type="use" value="Individual Training Workload[COMMENT - training schedule workload label on player training screen]" />
+        </widget>
+        <widget class="label" id="pWor" alignment="left,centre_y" auto_size="vertical" multiline="true" />
+<widget class="picture" file="dividers/standard/horizontal/line" auto_size="vertical" />
+
+
+			   <widget class="label" colour="accent" alignment="left,centre_y" auto_size="all" font="title">
+         <translation id="text" translation_id="334174" type="use" value="Training Happiness[COMMENT: player training, player happiness comments]" />
+        </widget>
+		
+ <widget class="text" id="pHop" alignment="left,top" auto_size="vertical" multiline="true" />
+
+        <widget class="popup_button" id="DisT" fixed="true" auto_size="all" appearance="buttons/embedded/normal/button" alignment="left, centre_y">
+          <translation id="text" translation_id="395166" type="use" value="Comment on Training[COMMENT: Individual training panel; text for a button for having a private chat with player about his development]" />
+        </widget>
+
+        
+
+      </container>
+
+    </container>
+
+  </container>
+</panel>

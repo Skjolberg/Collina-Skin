@@ -1,0 +1,21 @@
+<panel>
+  <container id="SUBP">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+  </container>
+
+  <widget class="popup_button" id="popv" auto_size="horizontal" height="16" width="16" click_event="msis" appearance="buttons/custom/customise panel/button" fixed="true" embed_in_frame="true">
+		<layout class="stick_to_sides_attachment" alignment="top,right" inset="2"/>
+	</widget>
+
+
+		<widget class="player_personal_details_panel" id="ypd0" file="player/selector/opz pics_kits" save_session_state="true" late_loading="true">
+		<translation id="title" type="use" value="Kits Pics" />
+	</widget>
+
+	<widget class="player_personal_details_panel" id="gunz" file="player/selector/gunzo" save_session_state="true" late_loading="true">
+		<translation id="title" type="use" value="DF11/Cut Out Pics" />
+	</widget>
+
+
+</panel>

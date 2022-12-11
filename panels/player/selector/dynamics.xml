@@ -1,0 +1,146 @@
+<!-- THIS IS THE PANEL THAT SHOWS UNDER PLAYING TIME HAPPINESS ON THE PLAYER OVERVIEW SELECTORS -->
+<panel>
+    <layout class="vertical_arrange" vertical_layout="15,-1" vertical_gap="0"/>
+
+	<container>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+    <string id="skin_style" value="title link" />
+
+    <!-- PLAYING TIME PATHWAY HEADER -->
+
+					<container >
+			<layout class="fit_children_attachment" alignment="vertical" offset="0" embed_in_frame="true" />
+			<layout class="arrange_horizontal_attachment" alignment="right" embed_in_frame="true" offset="24" gap="0" />
+			<layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" embed_in_frame="true" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" embed_in_frame="true" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="top" embed_in_frame="true" inset="" />
+
+			<widget class="editable_client_object_property_panel" id="mora" embed_in_frame="true">
+				<record id="object_property">
+					<integer id="get_property" value="Pmor" />
+				</record>
+				<record id="widget_properties" style="bold" size="10" auto_size="all" font="title" />
+			</widget>
+		</container>
+	</container>
+
+
+
+<container>
+	<layout class="arrange_vertical_attachment" layout="-1,40" offset="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+	<container id="hapC">
+		<translation id="title" translation_id="247463" type="use" value="Happiness" />
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+		<!-- No data label -->
+		<widget class="label" id="labl" hidden="true">
+			<translation id="text" translation_id="330275" type="use" value="Not available[COMMENT: happiness panel; text displayed when no happiness information is available]" />
+		</widget>
+
+		<!-- Morale and general happiness -->
+		<container id="hcon">
+			<layout class="arrange_horizontal_attachment" layout="-1,3,-1" offset="0" gap="10" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<!-- Positives -->
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<widget class="label" font="title" colour="positive">
+					<translation id="text" translation_id="365300" type="use" value="Positives[COMMENT: FR 512; person happiness panel; section listing things that have a positive impact on the person's happiness]" />
+				</widget>
+				<widget class="table" id="genw" layout="20,-1" auto_size_rows="true" fixed_size_rows="false" >
+					<list id="column_table_properties">
+						<record id="bull">
+							<record id="widget_info" class="picture" file="icons/16px/bullet" red_replacement="text" height="14"/>
+						</record>
+						<record id="text">
+							<record id="widget_info" class="text" auto_size="vertical"/>
+						</record>
+					</list>
+				</widget>
+			</container>
+
+			<!-- separator image -->
+			<widget class="vertical_divider" id="hdiv"/>
+
+			<!-- Negatives -->
+			<container>
+				<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+				<widget class="label" font="title" colour="negative">
+					<translation id="text" translation_id="365291" type="use" value="Negatives[COMMENT: FR 512; person happiness panel; section listing things that have a negative impact on the person's happiness]" />
+				</widget>
+				<widget class="table" id="geni" layout="20,-1" auto_size_rows="true" fixed_size_rows="false">
+					<list id="column_table_properties">
+						<record id="bull">
+							<record id="widget_info" class="picture" file="icons/16px/bullet" red_replacement="text" height="14"/>
+						</record>
+						<record id="text">
+							<record id="widget_info" class="text" auto_size="vertical"/>
+						</record>
+					</list>
+				</widget>
+			</container>
+		</container>
+	</container>
+
+<container class="person_chemistry_relationship_panel" file="none" >
+<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+<record id="object_property" get_property="objt" set_property="objt"/>
+
+	<!--very close relationship colour-->
+	<colour id="pVgC" name="very close relationship" />
+	<!--close relationship colour-->
+	<colour id="pgCl" name="close relationship" />
+	<!--aquaintance relationship colour-->
+	<colour id="pACl" name="aquaintance relationship" />
+	<!--contact relationship colour-->
+	<colour id="pCTr" name="contact relationship" />
+	<!--rival relationship colour-->
+	<colour id="prVr" name="rival relationship" />
+	<!--adversary relationship colour-->
+	<colour id="pAdv" name="adversary relationship" />
+	<!--distant relationship colour-->
+	<colour id="pCds" name="distant relationship" />
+
+
+		<container >
+<attachment_group class="horizontal_arrange" horizontal_alignment="left,extend" />
+
+
+			<container height="16">
+				<layout class="arrange_horizontal_attachment" alignment="left" offset="0" gap="4" />
+				<layout class="fit_children_attachment" alignment="horizontal,fill" offset="0" gap="4" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+				<widget class="picture" id="hrcP" height="15" width="15" file="icons/48px/relationship" image_alignment="centre" scale_picture="true" keep_aspect_ratio="true" />
+
+				<widget class="text" id="dreL" auto_size="horizontal" alignment="left,centre_y" font="value" />
+				<widget class="relationship_label" id="relL" display_format="0" auto_size="horizontal"  alignment="left,centre_y" font="value" />
+
+				<widget class="picture" id="hrcl" width="16" hidden="true" file="icons/16px/up" image_alignment="centre" scale_picture="true" />
+			</container>
+
+			<container class="vertical_label_value_pair" label_widget="opHd" value_widget="opiL">
+				<widget class="text" id="opHd" colour="accent"  alignment="right">
+					<translation id="text" translation_id="447596" type="use" value="Opinion of [%person#1-you][COMMENT: player Relationships panel; panel header title for players opinion of manager]" />
+				</widget>
+				<widget class="text" id="opiL" alignment="right" font="title" size="9">
+				</widget>
+			</container>
+
+
+		</container>
+
+</container>
+</container>
+
+
+
+
+</panel>

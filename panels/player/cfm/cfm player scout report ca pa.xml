@@ -1,0 +1,49 @@
+ <container height="46" priority="1">
+                <layout class="arrange_horizontal_attachment" layout="-5,-5,-5" offset="0" />
+                <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+                <!-- scout rating -->
+                <container class="player_scout_reports_panel" file="none">
+                    <layout class="arrange_vertical_attachment" layout="-1,3,-1" offset="7" gap="0" />
+                    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+                    <record id="object_property" get_property="objt" set_property="objt" />
+                    <!-- CA -->
+                    <widget class="label" alignment="centre_x, centre"  size="small" colour="accent" font="title">
+                        <translation id="text" translation_id="293291" type="use" value="Current Ability" />
+                    </widget>
+                    <container height="3" />
+                    <container class="horizontal_adaptive_container" inset="0" gap="0" mode="dont_distribute">
+                        <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+                        <widget class="scout_stars_label" id="CAic" alignment="centre_x, centre_y" click_event="ltms" default_width="130" minimum_width="70" />
+                    </container>
+                </container>
+				
+				
+                <container>
+                    <layout class="arrange_vertical_attachment" layout="-1,3,-1" offset="7" gap="0" />
+                    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+                    <!--Reputation label-->
+                    <widget class="label" alignment="centre_x,centre" size="small" colour="accent" font="title">
+                        <translation id="text" translation_id="330399" type="use" value="Reputation[COMMENT - person list view column heading]" />
+                    </widget>
+                    <!--Reputation-->
+                    <container height="3" />
+                    <widget class="global_reputation_stars_label" id="Prsa" size="12" style="" alignment="centre_x,centre_y">
+                        <record id="object_property">
+                            <integer id="get_property" value="Prsa" />
+                        </record>
+                    </widget>
+                </container>
+				
+                <!-- scout rating -->
+                <container class="player_scout_reports_panel" file="none">
+                    <layout class="arrange_vertical_attachment" layout="-1,3,-1" offset="7" gap="0" />
+                    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+                    <record id="object_property" get_property="objt" set_property="objt" />
+                    <!-- PA -->
+                    <widget class="label" alignment="centre_x, centre" size="small" colour="accent" font="title">
+                        <translation id="text" translation_id="293292" type="use" value="Potential Ability" />
+                    </widget>
+                    <container height="3" />
+                    <widget class="scout_stars_label" id="PAic" alignment="centre_x, centre_y" click_event="ltms" />
+                </container>
+            </container>

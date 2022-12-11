@@ -1,0 +1,82 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+	<container>
+		<layout class="arrange_vertical_attachment" layout="50,-1" offset="0" gap="1" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+		<container class="player_training_performance_panel" id="ytp " file="">
+			<record id="object_property" get_property="objt" set_property="objt" />
+			<attachment_group class="horizontal_arrange" horizontal_layout="-2,-4" horizontal_gap="0"/>
+			<container class="inner_box_no_margin" id="rtbx" width="140" height="45" appearance="boxes/bordered/standard/trainning_box" rrep="">
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="-2" />
+				<widget class="text" font="title" size="9" alignment="left,can_scale" id="ytl " auto_size="vertical" _multiline="false" colour="white">
+					<translation id="text" translation_id="466504" type="use" value="Training Rating[COMMENT: a rating of how well the player is getting on in training]" />
+				</widget>
+				<widget class="training_rating_label_formatted" id="yrtx" format="[%fraction#1-3.2]" font="value" auto_size="all" alignment="left,top" image_alignment="left" appearance="none">
+					<record id="object_property">
+						<string id="get_property" value="Ptrt" />
+						<string id="set_property" value="valu" />
+					</record>
+				</widget>
+			</container>
+			<widget class="text" alignment="centre" id="trst" size="small" />
+		</container>
+		<container>
+			<attachment_group class="horizontal_arrange" horizontal_layout="-5,-4,-5" horizontal_offset="0" horizontal_gap="0" vertical_alignment="vertical" vertical_inset="0" />
+			
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+				<container class="scrolling_box">
+					<container>
+						<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" vertical_gap="20"/>
+						<widget class="label" alignment="left" auto_size="vertical" font="label">
+							<translation id="text" translation_id="363709" type="use" value="Position/Role/Duty[COMMENT: FR 8989 - Player position, role and duty]" />
+						</widget>
+						<widget class="individual_position_training_popup" show_table_legend="true" fixed="false" appearance="buttons/standard/normal/button" id="itpu" alignment="left,centre_y" auto_size="vertical" />
+						<widget class="label" alignment="left" auto_size="vertical" font="label">
+							<translation id="text" translation_id="394317" type="use" value="Additional Focus[COMMENT - individual training popup menu; specific focus training]" />
+						</widget>
+						<widget class="individual_training_popup" show_table_legend="true" fixed="false" appearance="buttons/standard/normal/button" id="itat" alignment="left,centre_y" auto_size="vertical" />
+						<widget class="label" alignment="left" auto_size="vertical" font="label">
+							<translation id="text" translation_id="347767" type="use" value="Intensity Level[COMMENT: team training; the desired default level of intensity the players will train under]" />
+						</widget>
+						<widget class="player_training_intensity_rest_popup_button" fixed="false" appearance="buttons/standard/normal/button" id="inPt" alignment="left,centre_y" auto_size="vertical" />
+						
+						
+						
+									<widget class="text" auto_size="vertical" font="label">
+            <translation id="text" translation_id="402385" type="use" value="Player Traits[COMMENT: label for the previously named 'Preferred Moves' section (ID 229993), changed to Player Traits because it fits all potential options more suitably]" />
+          </widget>
+					
+        <widget class="preferred_move_popup_button" fixed="false" appearance="buttons/standard/normal/button" id="nPPM" alignment="left,centre_y" auto_size="vertical" >
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="PmCo" />
+									<integer id="set_property" value="valu" />
+								</record>
+							</list>
+						</record>
+					</widget>
+					
+					</container>
+				</container>
+			
+			<container>
+				<attachment_group class="vertical_arrange" vertical_layout="-2,-1" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+					<widget class="pitch_with_player_positions" id="pspi" wants_mouse_events="false" pitch_keep_selected_icons="false" vertical="false" pitch_alignment="centre_x,top" pitch_draw_goals="false" pitch_draw_markings="false" show_position_strength="false" hide_player_positions="true" pitch_show_names="false" pitch_show_names_as_hint="true" pitch_draw_grass="true" pitch_line_colour="alt text" pitch_touchline_width_percentage="1" pitch_override_icon_size="2" line_width="1.4" pitch_vertical_padding="8">
+						<string id="pitch_kit_icon" value="pitch/icons/dots" />
+					</widget>
+					<container wants_mouse_events="true" />
+				</container>
+				<container class="inner_box">
+					<attachment_group class="vertical_arrange" vertical_alignment="top,extend" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="0" />
+					<widget class="label" alignment="centre" auto_size="vertical" font="label">
+						<translation id="text" translation_id="441101" type="use" value="Training Workload[COMMENT: player training workload title]" />
+					</widget>
+					<widget class="text" id="pWor" alignment="centre_x,top" auto_size="vertical" style="bold" multiline="true" />
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

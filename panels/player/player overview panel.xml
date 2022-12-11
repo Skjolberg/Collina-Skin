@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel>
+
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	<container class="horizontal_adaptive_container" mode="distribute_equally" offset="0" inset="0" gap="10" priority="1">
+
+	<container class="subsection_box" appearance="boxes/bordered/transparent/paper2"  red_replacement=""  green_replacement="" default_width="320" priority="1">
+		<layout class="arrange_vertical_attachment" layout="345,52,270,-1" offset="0" gap="0"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<container>
+			<layout class="arrange_vertical_attachment" layout="-1" offset="0" gap="0"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<!-- Portrait Pics -->
+			<container class="client_object_viewer_selector_panel"  default_item="pppp" file="player/selector/player overview profile selector panel" save_session_state="true" priority="1" default_height="-1">
+				<integer id="default_for_unemployed_managers" value="pppp"/>
+				<integer id="default_for_international_managers_other_team" value="pppp"/>
+				<integer id="default_for_everyone_else" value="pppp"/>
+				<integer id="default_for_versus_mode" value="pppp"/>
+			</container>
+		</container>
+
+		<!-- Scout Report Stars -->
+		<widget class="player_scout_reports_panel" file="player/cfm/cfm player scout report ca pa" late_loading="true">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+			<record id="object_property">
+				<integer id="get_property" value="objt" />
+				<integer id="set_property" value="objt" />
+			</record>
+		</widget>
+
+		<!-- Personal Details -->
+		<widget class="player_personal_details_panel" file="player/cfm/cfm player personal details panel">
+			<record id="object_property" get_property="objt" set_property="objt"/>
+		</widget>
+
+		<container class="vertical_adaptive_container" mode="distribute_equally" offset="0" inset="0" gap="0">
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" />
+
+			<widget class="picture" file="custom/divider" height="10"  image_alignment="centre" />
+
+
+		<!-- 1 panels -->
+				<container class="plain_box" save_session_state="true" default_height="-1" minimum_height="150" priority="1">
+							<layout class="stick_to_sides_attachment" apply_to_children="true"/>
+
+							<widget class="player_scout_reports_panel" file="player/selector/player scout report block">
+								<record id="object_property" get_property="objt" set_property="objt"/>
+							</widget>
+
+						</container>
+
+			</container>
+			</container>
+
+
+<widget class="picture" file="dividers/custom/vertical/line" default_width="4" priority="2"/>
+	<container class="vertical_adaptive_container" mode="distribute_equally" default_width="-4" offset="0" inset="0" gap="1">
+	<container class="horizontal_adaptive_container" mode="distribute_equally" default_height="430" offset="0" inset="0" gap="1">
+
+		<!-- Default: Attributes -->
+		<container class="tabbed_container" inset="0" offset="0" gap="0" default_width="-17" minimum_width="500" priority="1"  appearance="boxes/bordered/transparent/paper2"  save_session_state="true"  default_item="cosZ">
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+		<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
+
+		<!-- Attributes Selector -->
+		<container class="client_object_viewer_selector_panel" id="cosZ" file="player/player overview attributes selector" save_session_state="true" minimum_width="510" default_width="-2" priority="1" dont_set_embedded_title="true">
+		<translation id="title" translation_id="229822" type="use" value="Attributes" />
+		<widget class="player_attributes_panel" file="player/custom/player attributes panela" id="patt" late_loading="true">
+			<translation id="title" translation_id="229822" type="use" value="Attributes" />
+		</widget>
+			<integer id="default_for_unemployed_managers" value="patt"/>
+			<integer id="default_for_international_managers_other_team" value="patt"/>
+			<integer id="default_for_everyone_else" value="patt"/>
+			<integer id="default_for_versus_mode" value="patt"/>
+		  </container>
+
+
+		<!-- Tabbed Container -->
+
+		<!-- Contract -->
+		<widget class="player_contract_panel" id="Pcnr" file="player/player contract profile" late_loading="true">
+		<translation id="title" value="Contract" type="use" translation_id="257347"/>
+		<record id="object_property">
+		<integer id="get_property" value="objt"/>
+		<integer id="set_property" value="objt"/>
+		</record>
+		</widget>
+
+		<!-- Training -->
+		<widget class="player_training_information" id="pptt" file="player/yacs training big" late_loading="true">
+		<translation id="title" value="Training[COMMENT - club training menu option on manager menu]" type="use" translation_id="230334"/>
+		<record id="object_property" set_property="objt" get_property="objt"/>
+		</widget>
+
+		<!-- Report -->
+		<widget class="player_scout_reports_panel" id="Pccr" file="player/heffem player report" late_loading="true">
+		<translation id="title" value="Report[COMMENT; coach reports section of player profile]" type="use" translation_id="248079"/>
+		<record id="object_property">
+		<integer id="get_property" value="objt"/>
+		<integer id="set_property" value="objt"/>
+		</record>
+		</widget>
+
+		<!-- Data Analyst -->
+			<container class="player_scout_reports_panel" file="player/woz/player coach reports mid" id="mScr" late_loading="true">
+						<translation id="title" type="use" value="SciSports" />
+						<record id="object_property" get_property="objt" set_property="objt"/>
+					</container>
+
+
+
+		<!-- Injury -->
+		<widget class="player_injury_panel" id="InjU" file="player/player injury panel small" late_loading="true" valid_for_unemployed_managers="false" valid_for_international_managers_other_team="false">
+					<translation id="title" translation_id="247523" type="use" value="Injury[COMMENT: Player Injury name, table header]" />
+						<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+					</widget>
+
+
+		<!-- Stats -->
+		<widget class="player_additional_stats_panel" file="player/woz/player additional stats" id="StaT" late_loading="true">
+							<translation id="title" translation_id="247412" type="use" value="Stats" />
+						<record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+						</record>
+					</widget>
+
+
+
+<widget class="person_discussion_panel" file="player/quick chat" id="irdi" late_loading="true" valid_for_other_team_managers="false" valid_for_unemployed_managers="false">
+       <translation id="title" translation_id="509194" type="use" value="Quick Chat" />
+							<record id="object_property" get_property="objt" set_property="objt"/>
+			</widget>
+
+         <!-- Happiness -->
+     <widget class="person_happiness_panel" id="phap" file="player/custom/person happiness profile" late_loading="true">
+<translation id="title" value="Happiness" type="use" translation_id="247463"/>
+<record id="object_property">
+<integer id="get_property" value="objt"/>
+<integer id="set_property" value="objt"/>
+</record>
+</widget>
+
+
+       	<!-- Career Stats -->
+		   <widget class="player_history_stats_panel"   id="pahs"  late_loading="true">
+           <translation id="title" translation_id="247605" type="use" value="" />
+		   <record id="object_property">
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+		  </widget>
+
+		</container>
+
+				<!-- Right Big panels -->
+					<container class="client_object_viewer_selector_panel" id="cosL" file="player/player overview big selector panel2" minimum_width="353" default_width="0" priority="1" >
+				<integer id="default_for_unemployed_managers" value="ppi1"/>
+				<integer id="default_for_international_managers_other_team" value="ppi1"/>
+				<integer id="default_for_everyone_else" value="ppi1"/>
+				<integer id="default_for_versus_mode" value="ppi1"/>
+			</container>
+
+
+
+					</container>
+
+
+		<!-- Smaller panels -->
+		<widget class="horizontal_divider" file="dividers/custom/horizontal/line" default_height="4" priority="1" />
+
+		<container class="horizontal_adaptive_container" mode="distribute_equally" offset="0" inset="0" gap="1" default_height="0" minimum_height="50" priority="1">
+
+
+		<!-- Media -->
+		<container class="bordered_box" appearance="boxes/bordered/transparent/paper2"  red_replacement=""  priority="1" default_width="-5">
+		<layout class="arrange_horizontal_attachment" layout="-1,45,-1" offset="0"/>
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+		 <container>
+          <layout class="arrange_vertical_attachment" layout="-4,-4" offset="0" gap="0" />
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		    <widget class="label" spec="text,normal" alignment="centre_x,bottom, can_scale" font="title" colour="bg custom green">
+           <translation id="text" translation_id="319499" type="use" value="Media Description[COMMENT: personal information screen; text indicating a person's media description]" />
+          </widget>
+			<widget class="player_description_text" id="dect" size="9"  colour="text" alignment="centre_x,top,can_scale">
+            <record id="object_property">
+              <integer id="get_property" value="Pdes" />
+            </record>
+          </widget>
+      		</container>
+
+		<widget class="picture" file="icons/26px/media1" red_replacement="primary" blue_replacement="secondary" height="0" scale_picture="true" image_alignment="centre" />
+
+		<container>
+          <layout class="arrange_vertical_attachment" layout="-4,-4" offset="0" gap="0" />
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+			<widget class="label" spec="text,normal" alignment="centre_x,bottom, can_scale" font="title" colour="bg custom green">
+           <translation id="text" translation_id="310463" type="use" value="Media Handling[COMMENT: player transfer panel; how staff handles media]" />
+          </widget>
+			<widget class="media_handling_label" id="Pghm" size="9"  colour="text" alignment="centre_x,top,can_scale">
+            <record id="object_property">
+              <integer id="get_property" value="Pghm" />
+            </record>
+          </widget>
+
+		</container>
+
+					</container>
+
+					<widget class="vertical_divider" file="dividers/custom/vertical/line" default_width="0" priority="1" />
+
+
+		<!-- Personality -->
+
+					<container class="bordered_box" appearance="boxes/bordered/transparent/paper2"  red_replacement=""  priority="1" default_width="-5">
+
+				<layout class="arrange_horizontal_attachment" layout="-1,40,-1" offset="0"/>
+							<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+
+		 <container>
+          <layout class="arrange_vertical_attachment" layout="-4,-4" offset="0" gap="0" />
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		    <widget class="label" spec="text,normal" alignment="centre_x,bottom, can_scale" font="title" colour="bg custom green">
+		<translation id="text" translation_id="247713" type="use" value="Personality" />
+          </widget>
+			<widget class="personality_label" id="pers" size="9" colour="text"   alignment="centre_x,top,can_scale">
+            <record id="object_property">
+              <integer id="get_property" value="PPst" />
+            </record>
+          </widget>
+
+		</container>
+
+		<widget class="picture" file="icons/custom/scouting/report card/home_grown_registration" red_replacement="primary" blue_replacement="secondary" height="0" scale_picture="true" image_alignment="centre" />
+
+		 <container>
+          <layout class="arrange_vertical_attachment" layout="-4,-4" offset="0" gap="0" />
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			  <widget class="label" spec="text,normal" alignment="centre_x,bottom, can_scale" font="title" colour="bg custom green">
+            <translation id="text" translation_id="275851" type="use" value="Home-Grown Status[COMMENT: person table; column heading]" />
+          </widget>
+			<widget class="home_grown_status_label" id="more" size="9"  colour="text" alignment="centre_x,top,can_scale">
+            <record id="object_property">
+              <integer id="get_property" value="Phgs" />
+            </record>
+          </widget>
+
+		</container>
+
+					</container>
+
+					<widget class="vertical_divider" file="dividers/custom/vertical/line" default_width="0" priority="1" />
+
+		<!-- Condition -->
+		<container class="bordered_box" appearance="boxes/bordered/transparent/paper2" priority="1" minimum_width="353" default_width="0">
+
+						<layout class="arrange_horizontal_attachment" layout="-1,32,1,32,-1" offset="0"/>
+							<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+						   <container>
+          <layout class="arrange_vertical_attachment" layout="-4,-3,-3" offset="0" gap="0" />
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+          <!--Physical-->
+          <widget class="condition_label" spec="text,large" id="PhCO" size="12" font="title" alignment="centre_x,bottom">
+            <record id="object_property">
+              <integer id="get_property" value="Pcon" />
+            </record>
+          </widget>
+          <!--Physical label-->
+          <widget class="label" spec="text,small,can_scale" alignment="centre_x,top,can_scale"  colour="text">
+         <translation id="text" value="Physical Condition[COMMENT: label for a player's overall physical condition, when taking every element of his game into account]" />
+          </widget>
+        </container>
+	 <widget class="client_object_property_panel" property="PcOI" alignment="right,centre_y">
+            <record id="object_property" get_property="objt" set_property="objt"/>
+          </widget>
+
+
+			<container/>
+	  <widget class="client_object_property_panel" property="PftI" alignment="right,centre_y">
+            <record id="object_property" get_property="objt" set_property="objt"/>
+          </widget>
+
+		 <container>
+          <layout class="arrange_vertical_attachment" layout="-4,-3" offset="0" gap="0" />
+          <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+          <!--fitnes-->
+          <widget class="condition_label" spec="text,large" id="PhMS" size="12" font="title" alignment="centre_x,bottom">
+            <record id="object_property">
+              <integer id="get_property" value="Pfit" />
+            </record>
+          </widget>
+          <!--fitness label-->
+          <widget class="label" spec="text,small" alignment="centre_x,top,can_scale" colour="text">
+         <translation id="text" translation_id="388919" type="use" value="Match Sharpness[COMMENT: label for the player's match fitness, i.e. what condition he's currently in if he were to be selected for the next fixture]" />
+          </widget>
+
+
+        </container>
+
+					</container>
+					</container>
+
+					<widget class="horizontal_divider" file="dividers/custom/horizontal/line" default_height="4" priority="1" />
+
+
+
+
+		<container class="horizontal_adaptive_container" mode="distribute_equally" default_height="-1" offset="0" inset="10" gap="1">
+
+
+			<container class="vertical_adaptive_container" mode="distribute_equally"  minimum_width="320" offset="0" inset="0" gap="1" priority="3">
+			<container class="client_object_viewer_selector_panel" id="cos18" file="player/player overview big selector panel2" navigation_container="true" minimum_width="100" default_width="-1" save_session_state="true" priority="3">
+				<integer id="default_for_unemployed_managers" value="hefr"/>
+				<integer id="default_for_international_managers_other_team" value="hefr"/>
+				<integer id="default_for_everyone_else" value="hefr"/>
+				<integer id="default_for_versus_mode" value="hefr"/>
+			</container>
+
+
+			</container>
+
+			<container class="vertical_adaptive_container" mode="distribute_equally" default_width="-15" minimum_width="550" offset="0" inset="0" gap="1" priority="1">
+
+
+
+
+			<!-- Season stats-->
+					<container class="horizontal_adaptive_container" mode="distribute_equally" offset="0" inset="0" gap="1" default_height="150" minimum_height="85" priority="1">
+
+
+					<container class="bordered_box" appearance="boxes/bordered/transparent/paper" priority="1" default_width="-13">
+
+						<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+						<widget class="player_additional_stats_panel" id="Psta" file="player/player additional stats small">
+							<record id="object_property">
+								<list id="get_properties">
+
+									<!-- Hide this panel if player is in inactive league-->
+									<record id="object_property" get_property="objt" set_property="objt"/>
+									<record id="object_property" get_property="Pila" set_property="hidn"/>
+								</list>
+							</record>
+						</widget>
+
+
+						<widget class="player_stats_panel" id="pssp" file="player/cfm/cfm player stats small">
+							<record id="object_property">
+								<list id="get_properties">
+
+									<!-- Show this panel if player is in inactive league-->
+									<record id="object_property" get_property="Pila" set_property="Shwn"/>
+									<record id="object_property" get_property="objt" set_property="objt"/>
+								</list>
+							</record>
+						</widget>
+
+					</container>
+
+
+
+					<!--container class="client_object_viewer_selector_panel" id="cos2" file="player/player overview small selector panel" save_session_state="true" minimum_width="100" default_width="-5" priority="1" default_item="pfmp">
+						<integer id="default_for_unemployed_managers" value="pfmp"/>
+						<integer id="default_for_international_managers_other_team" value="pfmp"/>
+						<integer id="default_for_everyone_else" value="pfmp"/>
+						<integer id="default_for_versus_mode" value="pfmp"/>
+					</container-->
+
+
+				</container>
+
+
+
+
+
+			<!-- 2 small panels middle -->
+				<container class="horizontal_adaptive_container" mode="distribute_equally" offset="0" inset="0" gap="1" default_height="-1" minimum_height="105" priority="1">
+
+				<container class="client_object_viewer_selector_panel"  id="cos3" default_item="PPtp" navigation_container="true" file="player/player overview small selector panel" save_session_state="true" minimum_width="255" default_width="0" priority="2">
+						<integer id="default_for_unemployed_managers" value="PPtp"/>
+						<integer id="default_for_international_managers_other_team" value="PPtp"/>
+						<integer id="default_for_everyone_else" value="PPtp"/>
+						<integer id="default_for_versus_mode" value="PPtp"/>
+					</container>
+
+
+
+					<container class="client_object_viewer_selector_panel" default_item="Pfor" navigation_container="true" file="player/player overview small selector panel" save_session_state="true" minimum_width="255" default_width="0" priority="1">
+						<integer id="default_for_unemployed_managers" value="Pfor"/>
+						<integer id="default_for_international_managers_other_team" value="Pfor"/>
+						<integer id="default_for_everyone_else" value="Pfor"/>
+						<integer id="default_for_versus_mode" value="Pfor"/>
+					</container>
+					</container>
+
+
+				<!-- 2 small panels middle -->
+
+
+
+
+
+
+				</container>
+				<!-- 1 big panels right-->
+
+
+
+				<container class="vertical_adaptive_container" mode="distribute_equally"  minimum_width="353" offset="0" inset="0" gap="1" priority="3">
+			<container class="client_object_viewer_selector_panel" id="cos7" file="player/player overview big selector panel2" navigation_container="true" minimum_width="100" default_width="-1" save_session_state="true" priority="3">
+				<integer id="default_for_unemployed_managers" value="Pcrs"/>
+				<integer id="default_for_international_managers_other_team" value="Pcrs"/>
+				<integer id="default_for_everyone_else" value="Pcrs"/>
+				<integer id="default_for_versus_mode" value="Pcrs"/>
+			</container>
+
+
+			</container>
+
+
+
+
+
+
+
+
+		</container>
+	</container>
+</container>
+</panel>

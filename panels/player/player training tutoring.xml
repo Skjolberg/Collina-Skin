@@ -1,0 +1,135 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container class="player_training_information" id="plIN"  file="none">
+
+		<layout class="arrange_vertical_attachment" layout="150, -1, " offset="0"/>
+		<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+		<container class="bordered_box" red_replacement="dark_box_background">
+
+			<layout class="arrange_horizontal_attachment" layout="-1, -1, -1" gap="5" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+			<!-- Profile picture -->
+			<widget class="picture" id="prop" scale_picture="true" keep_aspect_ratio="true" image_alignment="centre_x">
+				<record id="object_property">
+					<list id="get_properties">
+						<!--Facegen data request-->
+						<record get_property="fcgn"/>
+						<!--Fake name request-->
+						<record get_property="Pfke"/>
+						<record get_property="prpc" set_property="valu"/>
+					</list>
+				</record>
+			</widget>
+
+			<!-- Personal Details -->
+			<container class="plain_box">
+				<layout class="arrange_vertical_attachment" alignment="top" offset="15" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+
+				<widget class="person_button"  auto_size="all" alignment="left, centre_y" style="semi_bold">
+					<record id="object_property" dont_set_hint="true" get_property="Pnms"/>
+				</widget>
+
+				<!-- Nationality -->
+				<widget class="nation_button"  icon_enabled="false" auto_size="vertical"  colour="white">
+					<record id="object_property" dont_set_hint="true" get_property="PNat"/>
+				</widget>
+
+				<!-- Age & DoB-->
+				<container>
+					<layout class="fit_children_attachment" alignment="vertical" gap="0" offset="0"/>
+					<layout class="arrange_horizontal_attachment" alignment="left, extend" offset="0" gap="3" />
+					<layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+					<!-- Age -->
+					<widget class="formatted_label" alignment="left, centre_y" auto_size="all" colour="white" >
+						<translation id="format" translation_id="242551" type="use" value="[%number#1] years old" />
+						<record id="object_property" get_property="Page"/>
+					</widget>
+				</container>
+
+
+				<widget class="position_label" display_format="0" auto_size="vertical"  colour="white" alignment="left">
+					<record id="object_property" dont_set_hint="true" get_property="Ppos"/>
+				</widget>
+
+				<!-- personality_label -->
+				<widget class="personality_label"  auto_size="vertical"  colour="white">
+					<record id="object_property" dont_set_hint="true" get_property="PPst"/>
+				</widget>
+				
+				  <widget class="media_handling_label" id="mhst2" auto_size="vertical"  colour="white" >
+				<record id="object_property" dont_set_hint="true" get_property="Pghm"/>
+				</widget>
+				
+			</container>
+			
+			
+			
+			<!-- Personal Details -->
+			<container class="plain_box">
+				<layout class="arrange_vertical_attachment" alignment="top" offset="30" gap="0"/>
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+				
+				<widget class="preferred_moves_panel" file="player/player information preferred moves" id="pfmp2" auto_size="vertical">
+					<record id="object_property" get_property="objt" set_property="objt" />
+</widget>
+				
+				</container>
+			
+			
+
+		</container>
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+			<container class="subsection_box" id="tubx">
+				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+				<container>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+					<container class="scrolling_box">
+						<container id="NoTu">
+							<layout class="arrange_vertical_attachment" alignment="top" gap="0" offset="0" />
+							<layout class="fit_children_attachment" alignment="vertical, fill" offset="0" gap="0" />
+							<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+							<!-- reason no suitable tutor text gets added here in the code -->
+						</container>
+					</container>
+
+					<container id="TutL" hidden="true">
+						<layout class="arrange_vertical_attachment" layout="-1, -1, -1" gap="0" offset="0" />
+						<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+            <container>
+              <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+              <container class="tutor_information_panel" hidden="true" id="tut1" />
+            </container>
+
+            <container>
+              <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />              
+              <container class="tutor_information_panel" hidden="true" id="tut2" />
+            </container>
+
+            <container>
+              <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+              <container class="tutor_information_panel" hidden="true" id="tut3" />
+            </container>
+			
+			
+			
+			
+					</container>
+
+				</container>
+
+			</container>
+
+
+		</container>
+
+	</container>
+</panel>

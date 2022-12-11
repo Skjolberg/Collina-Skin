@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="top, extend" offset="0" gap="1" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+	
+
+	<!-- Main panel and sidebar -->
+	<container>
+		<layout class="arrange_horizontal_attachment" layout="-2,-1" offset="0" gap="1" />
+		<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+		<!-- Bottom section with a tab for team that may have a contract with the player -->
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+			<!-- These containers are filled in code. There will be one panel for each of the players contracts (up to 3 for a player that is co-owned and out on loan) -->
+			<!-- This class will be used for contracts with AI teams:-->
+			<!--<container file="player/player transfer information general"/>-->
+			<!-- And this class will be used for contracts with the human's club -->
+			<!--<container class="set transfer status panel"/>-->
+
+			<!-- This container is used if only one team have a contract with the player -->
+			<container class="subsection_box" id="info" hidden="true">
+				<translation id="title" translation_id="251898" type="use" value="Transfer Information[COMMENT: scout report panel box heading]" />
+
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+			</container>
+
+			<!-- This container is used if multiple teams have a contract with the player -->
+			<container class="tabbed_container" id="tabs" hidden="true" appearance="boxes/bordered/standard/paper"/>
+		</container>
+
+		<!-- Right panel with squad selection rules and interest panels -->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top, extend" offset="0" gap="1" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+			
+
+			<container class="subsection_box">
+				<translation id="title" translation_id="316766" type="use" value="Interest[COMMENT: Header for Clubs Interested in Player summary box]" />
+				<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+				<container class="player_transfer_interest_panel" id="Pint" />
+			</container>
+		</container>
+	</container>
+</panel>

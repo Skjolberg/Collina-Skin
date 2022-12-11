@@ -1,0 +1,41 @@
+﻿<panel width="300" >
+	<attachment_group class="vertical_arrange_autosize" horizontal_alignment="horizontal" vertical_offset="-2"/>
+
+	<container class="standard_popup_box" appearance="">
+		<attachment_group class="vertical_arrange_autosize" horizontal_inset="0" vertical_gap="8" />
+
+		<container>
+			<attachment_group class="horizontal_arrange_vertical_autosize_centre" horizontal_layout="35,-1" horizontal_offset="6"/>
+
+			<widget class="player_condition_icon_widget" height="20" label_disabled="true" appearance="" smpc="false" scale_picture="true" keep_aspect_ratio="true">
+				<record id="object_property" get_property="PcOI"/>
+			</widget>
+
+			<container>
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="4" vertical_gap="-7" vertical_alignment="middle"/>
+
+				<widget class="player_condition_icon_widget" height="20" icon_enabled="false" appearance="" font="title" size="large" colour="fg">
+					<record id="object_property" get_property="PcOI"/>
+				</widget>
+				
+				<widget class="text" id="cndT" auto_size="vertical" colour="faded text" multi_line="true" />
+			</container>
+		
+		</container>
+
+		<!--injury status-->
+		<widget class="player_injury_panel"  file="player/player injury panel condition hint1" >
+			<record id="auto_size_restrictions">
+				<string id="type" value="value" />
+				<integer id="value" value="300" />
+				<string id="limit_type" value="minimum" />
+				<string id="orientation" value="vertical" />
+			</record>
+			<record id="object_property" get_property="objt" set_property="objt" />
+		</widget>
+		
+		<container height="1"/>
+
+	</container>
+
+</panel>

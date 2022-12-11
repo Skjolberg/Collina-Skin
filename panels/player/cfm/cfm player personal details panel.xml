@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+    <!-- personal details -->
+    <container>
+		<layout class="arrange_vertical_attachment" layout="2,-1" offset="0" gap="0" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		<container/>
+
+
+
+		<container class="vertical_adaptive_container" inset="0" offset="0" gap="8">
+			<!-- contracted to/squad status -->
+			<container height="40">
+				<layout class="arrange_vertical_attachment" layout="16,16,16" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+
+
+
+				<container class="animated_wipe_cycle_fade_container" id="topc" interval="1">
+
+				<widget class="label" id="wglb" font="title" colour="accent" alignment="centre_x,centre_y">
+						<translation id="text" value="Contract" />
+					</widget>
+
+					<widget class="label" font="title" colour="accent" alignment="centre_x,centre_y">
+						<translation id="text" value="Positions" />
+					</widget>
+
+					<widget class="label" font="title" colour="accent" alignment="centre_x,centre_y">
+						<translation id="text" value="Media Description" />
+					</widget>
+
+
+
+</container>
+
+
+
+<container class="animated_wipe_cycle_fade_container" id="topc" interval="1">
+
+
+
+
+				<widget class="player_extra_details_text" id="plex" auto_size="vertical" priority="1" size="10" style="semi_bold" alignment="centre_x,centre_y,can_scale" multiline="false">
+					<record id="object_property">
+							<integer id="get_property" value="PExD" />
+						</record>
+					</widget>
+<widget class="position_label" spec="text,large,bold" id="bpos" size="9" colour="text" style="light_bold" alignment="centre_x,centre_y" display_format="0">
+						<record id="object_property">
+							<integer id="get_property" value="Pnps" />
+						</record>
+					</widget>
+<widget class="player_description_text" id="dect" colour="text" style="bold" size="10" alignment="centre_x,centre_y" auto_size="vertical">
+						<record id="object_property">
+							<integer id="get_property" value="Pdes" />
+						</record>
+					</widget>
+
+				</container>
+
+			</container>
+
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" horizontal_alignment="horizontal" horizontal_inset="80"  />
+
+					<!--Value-->
+					<widget class="transfer_value_label" id="valu" alignment="centre_x,centre_y" auto_size="all" style="semi_bold" font="text" size="10" colour="text">
+						<translation id="format" translation_id="383826" type="use" value="Valued at [%cash#1-roundsmall-short][COMMENT: FR 10661; player overview; string diaplyed a player's estimated monetary value]"/>
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="Pdva"/>
+									<boolean id="dont_set_hint" value="true"/>
+								</record>
+							</list>
+						</record>
+					</widget>
+
+
+				</container>
+
+			<!-- height/age/weight-->
+			<container height="40">
+				<layout class="arrange_horizontal_attachment" layout="-1,-2,-2,-2,-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<container/>
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="label" font="title" colour="bg custom green" alignment="centre_x,centre_y">
+						<record id="object_property" get_property="Phei" name="true"/>
+					</widget>
+					<widget class="height_label" id="heig" size="10" style="semi_bold" auto_size="vertical" alignment="centre_x,centre_y,can_scale">
+						<record id="object_property">
+							<integer id="get_property" value="Phei" />
+						</record>
+					</widget>
+				</container>
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="dob_label" id="dobc" display_format="0" font="title" colour="accent" alignment="centre_x,centre_y">
+						<record id="object_property">
+							<integer id="get_property" value="Pdob" />
+						</record>
+					</widget>
+					<widget class="label" id="age" size="10" style="semi_bold" auto_size="vertical" alignment="centre_x,centre_y,can_scale">
+						<record id="object_property">
+							<integer id="get_property" value="Page" />
+						</record>
+					</widget>
+				</container>
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<widget class="label" font="title" colour="bg custom green"  alignment="centre_x,centre_y">
+						<record id="object_property" get_property="Pwei" name="true"/>
+					</widget>
+					<widget class="weight_label" id="weig" size="10" style="semi_bold" auto_size="vertical" alignment="centre_x,centre_y,can_scale">
+						<record id="object_property">
+							<integer id="get_property" value="Pwei" />
+						</record>
+					</widget>
+				</container>
+
+				<container/>
+			</container>
+			<!-- wage and youth apps/club logo/expiry date and senior apps-->
+			<container height="88" priority="1">
+				<layout class="arrange_horizontal_attachment" layout="-1,-1,-1" offset="0" gap="55" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="label" id="wglb" font="title" colour="bg custom green" alignment="centre_x,centre_y">
+						<translation id="text" translation_id="242353" type="use" value="Wages" />
+					</widget>
+					<container class="wage_label" id="wkwg" size="10" style="semi_bold" auto_size="vertical" alignment="centre_x,centre_y,can_scale" format="5" >
+						<record id="object_property">
+							<integer id="get_property" value="Pcww" />
+						</record>
+					</container>
+					<widget class="international_appearances_label" id="youg" font="title" colour="accent" alignment="centre_x,centre_y">
+						<integer id="int_apps_label_format" value="4" />
+						<record id="object_property">
+							<integer id="get_property" value="Pist" />
+						</record>
+					</widget>
+					<widget class="international_appearances_label" id="youa" size="10" style="semi_bold" auto_size="vertical" alignment="centre_x,centre_y,can_scale">
+						<integer id="int_apps_label_format" value="3" />
+						<record id="object_property">
+							<integer id="get_property" value="Pist" />
+						</record>
+					</widget>
+				</container>
+
+				<widget class="object_portrait_picture" id="npiB" image_alignment="centre_x,centre_y" scale_picture="true" width="70" height="70" wants_mouse_events="true" embed_in_frame="true">
+					<layout class="centre_in_parent_attachment" alignment="all" inset="0" embed_in_frame="true" />
+
+					<record id="object_property" dont_set_hint="true" get_property="PNat" set_property="objt" />
+				</widget>
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="label" font="title" colour="bg custom green" alignment="centre_x,centre_y">
+						<translation id="text" translation_id="227784" type="use" value="Expires" />
+					</widget>
+					<widget class="date_cell" id="expd" size="10" style="semi_bold" auto_size="vertical" alignment="centre_x,centre_y,can_scale">
+						<record id="object_property">
+							<integer id="get_property" value="Pced" />
+						</record>
+					</widget>
+					<widget class="international_appearances_label" id="intg" font="title" colour="accent" alignment="centre_x,centre_y">
+						<integer id="int_apps_label_format" value="2" />
+						<record id="object_property">
+							<integer id="get_property" value="Pist" />
+						</record>
+					</widget>
+					<widget class="international_appearances_label" id="inta" size="10" style="semi_bold" auto_size="vertical" alignment="centre_x,centre_y,can_scale">
+						<integer id="int_apps_label_format" value="1" />
+						<record id="object_property">
+							<integer id="get_property" value="Pist" />
+						</record>
+					</widget>
+				</container>
+			</container>
+			<!-- left foot/right foot-->
+			<container height="40">
+				<layout class="arrange_horizontal_attachment" layout="-1,-2,-2,-1" offset="0" gap="0" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<container/>
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+					<widget class="label" font="title" colour="bg custom green" alignment="centre_x,centre_y">
+						<translation id="text" translation_id="230000" type="use" value="Left Foot" />
+					</widget>
+					<widget class="footedness_label" id="fotL" size="10" style="semi_bold" auto_size="vertical" alignment="centre_x,centre_y,can_scale">
+						<record id="object_property">
+							<integer id="get_property" value="Plft" />
+						</record>
+					</widget>
+				</container>
+
+				<container>
+					<layout class="arrange_vertical_attachment" alignment="fill" offset="0" gap="0" />
+					<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+					<widget class="label" font="title" colour="bg custom green" alignment="centre_x,centre_y">
+						<translation id="text" translation_id="230001" type="use" value="Right Foot" />
+					</widget>
+					<widget class="footedness_label" id="fotR" size="10" style="semi_bold" auto_size="vertical" alignment="centre_x,centre_y,can_scale">
+						<record id="object_property">
+							<integer id="get_property" value="Prft" />
+						</record>
+					</widget>
+				</container>
+
+				<container/>
+			</container>
+		</container>
+	</container>
+</panel>

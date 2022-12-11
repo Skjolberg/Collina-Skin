@@ -1,0 +1,91 @@
+<panel should_force_refresh="true">
+<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0" />
+	<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+	<widget class="player_reports_overview_summary_panel" file="player/yacs knowledge" height="50" inset="0" offset="0" gap="0"/>
+
+
+
+	<container height="290">
+
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+		<!--<widget class="picture" file="yacs/backgrounds/ppob" transparancy="1.0" _image_alignment="top, centre_x" scale_picture="true" keep_aspect_ratio="false" _height="220"/>-->
+		<container>
+					<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+
+
+					<widget class="picture" file="custom/cdbg" scale_picture="false" keep_aspect_ratio="false" red_replacement="primary" blue_replacement="secondary" transparency="1"/>
+
+
+
+		</container>
+
+		<widget class="kit_icon" file="generic/kit icon tactics" kit_path="default" kit_number_path="default" id="kIIC" width="125" height="125" keep_aspect_ratio="true" scale_picture="true" >
+		<animation class="slide_in_right_animation" duration="0.2" tween="ease_out" high_priority="true" />
+			<layout class="stick_to_sides_attachment" alignment="vertical" inset="40" />
+			<layout class="stick_to_sides_attachment" alignment="left" inset="65" />
+
+			<record id="object_property">
+				<list id="get_properties">
+					<record>
+						<integer id="get_property" value="objt" />
+						<integer id="set_property" value="objt" />
+					</record>
+				</list>
+			</record>
+		</widget>
+
+
+
+		 <container class="icon_box" icon="">
+
+			  <widget class="player_status_all_button" id="psAB" auto_size="all" alignment="bottom" offset_x="0" offset_y="4" gap="2" maximised="false" max_items_per_row_or_column="8" embed_in_frame="true">
+			  <animation class="slide_in_right_animation" duration="0.3" tween="ease_out" high_priority="true" />
+							<layout class="centre_in_parent_attachment" alignment="horizontal" offset="124" />
+						<layout class="stick_to_sides_attachment" alignment="top" inset="20"/>
+
+							  <record id="object_property">
+								  <integer id="get_property" value="Pnfa" />
+							  </record>
+					</widget>
+			</container>
+
+
+		<container>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" offset="0" gap="0" apply_to_children="true" />
+			<layout class="arrange_vertical_attachment" layout="-1,-6,-1"/>
+			<container />
+						<animation class="slide_in_left_animation" duration="0.2" tween="ease_out" high_priority="true" />
+			<widget class="picture" id="picM" scale_picture="true" keep_aspect_ratio="true" image_alignment="left,bottom">
+				<attachment class="test_setting_attachment" get_setting="show_portraits" default_value="true" set_property="hidn">
+					<list id="value">
+						<boolean value="false" />
+					</list>
+				</attachment>
+				<record id="object_property">
+					<list id="get_properties">
+						<record>
+							<integer id="get_property" value="fcgn" />
+						</record>
+						<record>
+							<integer id="get_property" value="Pfke" />
+						</record>
+						<record>
+							<integer id="get_property" value="prpc" />
+							<integer id="set_property" value="valu" />
+						</record>
+					</list>
+				</record>
+			</widget>
+			<container />
+
+
+		</container>
+
+	</container>
+
+
+
+
+
+</panel>

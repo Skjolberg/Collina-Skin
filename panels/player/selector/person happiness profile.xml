@@ -1,0 +1,109 @@
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+  <container class="plain_box">
+    <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+    <container height="20">
+      <layout class="arrange_horizontal_attachment" alignment="left,extend" offset="4" gap="4" />
+      <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+      <string id="skin_style" value="title link" />
+
+      <!-- Linked header -->
+      <widget class="link_button" id="ppin" section="Ppin" auto_size="all">
+        <layout class="stick_to_sides_attachment" alignment="left" inset="o" />
+        <!-- @archie.buck Replacing this for bug 171807 -->
+        <translation id="text" translation_id="447669" type="use" value="Dynamics[COMMENT: Manager Main/Top Menu; link to Dynamics screen showcasing a representation of interpersonal relationships at the club]" />
+      </widget>
+
+      <!-- Overall Happiness Level -->
+      <widget class="label" alignment="right,centre_y" colour="faded text" font="title" auto_size="all">
+        <record id="object_property" get_property="Pohl" name="true"/>
+      </widget>
+      <widget class="person_happiness_icon_widget" alignment="centre">
+        <boolean id="use_morale_icon" value="false" />
+        <integer id="happiness_type" value="6" />
+        <record id="object_property" get_property="Pohl"/>
+      </widget>
+
+    </container>
+
+    <!-- Separator -->
+    <widget class="picture" file="dividers/standard/horizontal/line" priority="3" image_alignment="centre" height="5"/>
+
+    <!-- No data label -->
+    <widget class="label" id="labl" auto_size="vertical" hidden="true">
+      <translation id="text" translation_id="330275" type="use" value="Not available[COMMENT: happiness panel; text displayed when no happiness information is available]" />
+    </widget>
+
+    <container height="25">
+      <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+      <!-- Morale-->
+      <widget class="editable_client_object_property_panel" id="mora"  size="large" style="semi_bold">
+        <record id="object_property">
+          <integer id="get_property" value="Pmor" />
+        </record>
+        <record id="widget_properties" auto_size="vertical" icon_enabled="true" should_recolour="true" />
+      </widget>
+
+      <!--dyanmics-->
+      <container id="dyLC">
+        <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0"/>
+        <layout class="arrange_horizontal_attachment" alignment="left,extend" offset="0" gap="4"/>        
+        <widget class="text" id="dynL" auto_size="horizontal" style="text,semi_bold" />
+        <widget class="text" id="dynS" colour="faded text" />
+      </container>
+    </container>
+
+    <!-- Morale and general happiness -->
+    <container id="hcon">
+      <layout class="arrange_horizontal_attachment" layout="-1,3,-1" offset="0" gap="10" />
+      <layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" />
+
+      <!-- Positives -->
+      <container>
+        <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+        <widget class="label" font="title" colour="positive">
+          <translation id="text" translation_id="365300" type="use" value="Positives[COMMENT: FR 512; person happiness panel; section listing things that have a positive impact on the person's happiness]" />
+        </widget>
+        <widget class="table" id="genw" layout="20,-1" auto_size_rows="true" fixed_size_rows="false" >
+          <list id="column_display_properties">
+            <record id="bull">
+              <record id="widget_info" class="picture" file="icons/16px/bullet" red_replacement="text" height="14"/>
+            </record>
+            <record id="text">
+              <record id="widget_info" class="text" auto_size="vertical"/>
+            </record>
+          </list>
+        </widget>
+      </container>
+
+      <!-- separator image -->
+      <widget class="picture" file="dividers/standard/vertical/line" id="hdiv"/>
+
+      <!-- Negatives -->
+      <container>
+        <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+
+        <widget class="label" font="title" colour="negative">
+          <translation id="text" translation_id="365291" type="use" value="Negatives[COMMENT: FR 512; person happiness panel; section listing things that have a negative impact on the person's happiness]" />
+        </widget>
+        <widget class="table" id="geni" layout="20,-1" auto_size_rows="true" fixed_size_rows="false">
+          <list id="column_display_properties">
+            <record id="bull">
+              <record id="widget_info" class="picture" file="icons/16px/bullet" red_replacement="text" height="14"/>
+            </record>
+            <record id="text">
+              <record id="widget_info" class="text" auto_size="vertical"/>
+            </record>
+          </list>
+        </widget>
+      </container>
+    </container>
+  </container>
+</panel>

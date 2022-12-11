@@ -1,0 +1,15 @@
+<panel>
+	<record id="object_property" get_property="objt" set_property="objt"/>
+	<layout class="arrange_horizontal_attachment" layout="120,-1" inset="0" offset="100" gap="0" />
+	<layout class="stick_to_sides_attachment" alignment="vertical" apply_to_children="true" inset="0" offset="0" gap="0" />
+	<container>
+		<layout class="centre_in_parent_attachment" alignment="vertical" apply_to_children="true" offset="0" />
+		<layout class="arrange_horizontal_attachment" alignment="right,extend" offset="0" gap="8" />
+		<container class="inner_box" id="klba" appearance="boxes/custom/scouting knowledge/paper" width="55" height="12">
+			<layout class="centre_in_parent_attachment" alignment="vertical" offset="0" apply_to_children="true" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0" />
+			<widget class="horizontal_percentage_bar" height="4" maximum_value="100" bar_value_colour="knowledge level" show_label_on_bar="false" label_width="0" appearance="charts/bar/custom/knowledge" id="kbar" />
+		</container>
+		<widget class="text" id="knot" auto_size="all" size="11" style="semi_bold"/>
+	</container>
+</panel>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel save_session_state="true">
+
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+  
+  <container>
+    <layout class="arrange_vertical_attachment" alignment="top, extend" offset="0" gap="0"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+	
+    
+
+<container>
+                <layout class="fit_children_attachment" alignment="vertical" offset="0" />
+                <layout class="stick_to_sides_attachment" alignment="top" inset="0" apply_to_children="true" />
+                <layout class="arrange_horizontal_attachment" alignment="fill" gap="0" offset="0" />
+
+                <!-- Current Ability -->
+                <container>
+                    <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+                    <layout class="arrange_horizontal_attachment" alignment="middle" gap="3" offset="0" />
+                    <layout class="centre_in_parent_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+                    <widget class="label" size="7.5" font="bold_shadowed" auto_size="all">
+                        <translation id="text" translation_id="251893" type="use" value="Current Ability[COMMENT: scout report panel box heading]" />
+                    </widget>
+                    <widget class="scout_stars_label" id="CAic" auto_size="all" value="15" />
+                </container>
+
+				
+				
+                <!-- Potential Ability -->
+                <container>
+                    <layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+                   <layout class="arrange_horizontal_attachment" alignment="middle" gap="3" offset="0" />
+                    <layout class="centre_in_parent_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+                    <widget class="label" size="7.5" font="bold_shadowed" auto_size="all">
+                        <translation id="text" translation_id="251894" type="use" value="Potential Ability[COMMENT: scout report panel box heading]" />
+                    </widget>
+                    <widget class="scout_stars_label" id="PAic" auto_size="all" value="15" />
+                </container>
+            </container>
+  
+ 	
+ </container>
+
+</panel>

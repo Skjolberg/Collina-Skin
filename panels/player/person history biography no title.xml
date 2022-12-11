@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+  <container class="icon_box" icon="icons/custom/icon box/biog">
+    <layout class="arrange_vertical_attachment" alignment="top, extend" offset="4" gap="0"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+    <container height="15">
+      <layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
+      <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+      
+      <string id="skin_style" value="title link" />
+
+      <!-- Linked header -->
+      <widget class="link_button" section="PHac" auto_size="all">
+      <record id="properties" view="-3"/>
+      <translation id="text" translation_id="295868" type="use" value="Biography[COMMENT: player history panel; title of biography titled box]" />
+      </widget>
+    </container>
+
+    <!-- Spacer -->
+    <container height="5"/>
+
+    <container class="scrolling_box">
+      <container id="cont">
+        <layout class="fit_children_attachment" alignment="vertical" priority="1" />
+        <layout class="arrange_vertical_attachment" alignment="top" />
+        <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+        <widget class="person_bio_text" id="biot" spec="text"  auto_size="vertical" size="normal"/>
+      </container>
+    </container>
+
+    <!-- A label indicating why there is sometimes no biography -->
+    <container id="nbct" hidden="true">
+      <layout class="arrange_vertical_attachment" alignment="top" offset="10" gap="0" />
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+      <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0"  />
+
+      <widget class="text" alignment="centre" colour="faded text" auto_size="all">
+        <translation id="text" translation_id="328535" type="use" value="This person does not have a biography yet.[COMMENT: person history biography; string telling the user why the biography is not shown]" />
+      </widget>
+    </container>
+  </container>
+</panel>

@@ -1,0 +1,8 @@
+﻿<!-- image properties -->
+<properties>
+	
+	<colour id="red_replacement" name="manager responsibility"/>
+	<colour id="green_replacement" name="staff responsibility"/>
+	<colour id="blue_replacement" name="bg"/>
+	
+</properties>

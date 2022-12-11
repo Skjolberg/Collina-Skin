@@ -1,0 +1,111 @@
+<panel draw_horizontal_dividers="true">
+    <layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="10" />
+
+    <!-- Player value -->
+    <container>
+        <layout class="horizontal_arrange" horizontal_layout="30,-1" horizontal_gap="8"/>
+
+        <widget class="picture" file="icons/custom/icon box/cost" red_replacement="primary" blue_replacement="secondary" scale_picture="true" image_alignment="centre_x,centre_y"/>
+
+        <container>
+            <layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="0"/>
+
+            <record id="object_property" get_property="PHcr" set_property="hidn"/>
+
+            <widget class="text" font="label" colour="faded text" alignment="left,centre_y">
+                <translation id="text" translation_id="227806" type="use" value="Value" />
+            </widget>
+
+            <widget class="transfer_value_label" show_button_appearance="false" font="value" size="small" auto_size="all" alignment="left, centre_y" allow_link_to_transfer_info="false">
+                <record id="object_property" get_property="Pdva"/>
+            </widget>
+
+        </container>
+
+        <container>
+            <layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="0"/>
+
+            <record id="object_property" get_property="PHcr" set_property="Shwn"/>
+
+            <widget class="text" font="label" colour="faded text" alignment="left,centre_y">
+                <translation id="text" translation_id="541768" type="use" value="Guide Value[COMMENT: AREA: Player Transfer Stauts; SUB-AREA: Transfer Information sup panel; FR-BN: 52771; TONE: Formal; CHARLIMIT: None; REF-ID: n/a; NOTE: Heading for section to display the guide transfer value range of a player in the human team]" />
+            </widget>
+
+            <container>
+                <layout class="vertical_arrange_autosize" vertical_alignment="top,extend" vertical_gap="0"/>
+                <widget class="transfer_value_label" show_button_appearance="false" id="GdVa" font="value" size="small" auto_size="all" alignment="left, centre_y" allow_link_to_transfer_info="false"/>
+                <widget class="transfer_value_label" show_button_appearance="false" id="TrVa" font="value" size="small" auto_size="all" alignment="left, centre_y" allow_link_to_transfer_info="false"/>
+            </container>
+
+        </container>
+
+    </container>
+
+    <!-- Asking Price -->
+    <container>
+        <layout class="horizontal_arrange" horizontal_layout="30,-1" horizontal_gap="8"/>
+
+        <widget class="picture" file="icons/custom/icon box/wages" red_replacement="primary" blue_replacement="secondary" scale_picture="true" image_alignment="centre_x,centre_y"/>
+
+        <container>
+            <layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="0"/>
+
+            <widget class="text" font="label" colour="faded text" alignment="left,centre_y">
+                <translation id="text" translation_id="227778" type="use" value="Asking Price" />
+            </widget>
+
+            <widget class="transfer_value_label" font="value" size="small" auto_size="all" alignment="left, centre_y" allow_link_to_transfer_info="false">
+                <record id="object_property" get_property="Papr"/>
+            </widget>
+
+        </container>
+
+    </container>
+
+    <!-- Transfer Status -->
+    <container>
+        <layout class="horizontal_arrange" horizontal_layout="30,-1" horizontal_gap="8"/>
+
+        <widget class="picture" file="icons/custom/icon box/exit" red_replacement="primary" blue_replacement="secondary" scale_picture="true" image_alignment="centre_x,centre_y"/>
+
+        <container>
+            <layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="0"/>
+
+            <widget class="text" font="label" colour="faded text" alignment="left,centre_y">
+                <translation id="text" translation_id="227953" type="use" value="Transfer Status" />
+            </widget>
+
+            <container>
+                <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+                <widget class="info_icon_hint_text" id="TStR" secondary_icon=""/>
+                <widget class="transfer_status_label" id="TSta" style="semi_bold" alignment="left,centre_y"/>
+            </container>
+
+        </container>
+
+    </container>
+
+    <!-- Loan Status -->
+    <container>
+        <layout class="horizontal_arrange" horizontal_layout="30,-1" horizontal_gap="8"/>
+
+        <widget class="picture" file="icons/custom/icon box/loan" red_replacement="primary" blue_replacement="secondary" scale_picture="true" image_alignment="centre_x,centre_y"/>
+
+        <container>
+            <layout class="vertical_arrange" vertical_alignment="fill" vertical_gap="0"/>
+
+            <widget class="text" font="label" colour="faded text" alignment="left,centre_y">
+                <translation id="text" translation_id="247489" type="use" value="Loan Status" />
+            </widget>
+
+            <container>
+                <layout class="stick_to_sides_attachment" apply_to_children="true"/>
+                <widget class="info_icon_hint_text" id="LStR" secondary_icon=""/>
+                <widget class="loan_status_label" id="LSta" style="semi_bold" multiline="true" alignment="left,centre_y"/>
+            </container>
+
+        </container>
+
+    </container>
+
+</panel>

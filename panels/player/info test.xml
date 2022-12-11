@@ -1,0 +1,100 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<panel>
+  <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+  <container class="icon_box" icon="icons/custom/icon box/info">
+    <layout class="arrange_vertical_attachment" alignment="top, extend" offset="0" gap="0"/>
+    <layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+	  <container height="15">
+      <layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
+      <layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+      <string id="skin_style" value="title link" />
+
+      <!-- Linked header -->
+
+      <widget class="link_button" section="Ppin" auto_size="all">
+         <translation id="text" type="use" value="Information" />
+      </widget>
+    </container>
+
+  <container class="scrolling_box" id="gzp1">
+    <container>
+      <layout class="fit_children_attachment" alignment="vertical" offset="0" gap="0" />
+      <layout class="arrange_horizontal_attachment" alignment="fill" offset="0" gap="0" />
+      <layout class="stick_to_sides_attachment" alignment="top" apply_to_children="true" inset="0" />
+
+   	<widget class="client_object_label_value_table" id="infq" auto_size="vertical">
+										<!-- Properties applied to all widgets -->
+										<!--<record id="default_properties"/>-->
+										<record id="object_property">
+											<integer id="get_property" value="objt" />
+											<integer id="set_property" value="objt" />
+										</record>
+
+										<record id="table_properties" layout="-1, -2" mode="fill_rows, stripe_rows" auto_size_rows="true" auto_size="true">
+											<!-- 2nd columns should be yellow, and have the same text style as the labels -->
+											<list id="column_properties">
+												<record indx="0" />
+												<record indx="1" spec="text" colour="selection" alignment="right, centre_y" />
+											</list>
+
+											<!-- table isn't sortable -->
+											<list id="column_display_properties">
+												<record indx="0" left="0" sort_disabled="true" />
+												<record indx="1" right="4" sort_disabled="true" />
+											</list>
+										</record>
+
+										<list id="viewed_property_ids">
+
+									<integer value="Pfrm" /><!--지난5경기-->
+
+									<integer value="Pclb" /><!--구단-->
+									<integer value="Phgs" /><!--홈그로운-->
+									<integer value="Pccs" /><!--팀내위상-->
+
+									<integer value="Pagn" /><!--에이전트-->
+								    <integer value="Pmfr" /><!--최소이적료-->
+									<integer value="hsLF" /><!--최근이적료-->
+									<integer value="Plcl" /><!--이전구단-->
+								    <integer value="Poap" /><!--출장횟수 -->
+									<integer value="Prat" /><!--평점-->
+
+									<integer value="Pogl" /><!--골 -->
+									<integer value="Poas" /><!--어시스트-->
+									<integer value="POMg" /><!--평균득점시간-->
+									<integer value="POlg" /><!--무득점시간-->
+
+									<integer value="Popa" /><!--패스성공률-->
+										<integer value="Post" /><!--유효슈팅률-->
+										<integer value="POcr" /><!--크로스성공률-->
+										<integer value="POtr" /><!--태클성공률-->
+										<integer value="POhr" /><!--헤딩성공률-->
+
+										<integer value="Podr" /><!--드리블-->
+
+										<integer value="POkp" /><!--중요패스-->
+										<integer value="POkh" /><!--중요헤딩-->
+										<integer value="POkt" /><!--중요태클-->
+										<integer value="POic" /><!--중요차단-->
+										<integer value="POtm" /><!--실책-->
+
+										<integer value="POwr" /><!--승률-->
+										<integer value="PAap" /><!--통산출장-->
+										<integer value="PAcg" /><!--통산골-->
+
+
+										</list>
+									</widget>
+
+
+    </container>
+
+
+
+  </container>
+
+   </container>
+</panel>

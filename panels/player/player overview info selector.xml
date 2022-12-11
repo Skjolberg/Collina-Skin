@@ -1,0 +1,100 @@
+<panel>
+  <container id="SUBP" class="subsection_box"  appearance="">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="30" />
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+  </container>
+
+  <widget class="popup_button" id="popv"  auto_size="horizontal" height="20" click_event="msis" appearance="buttons/custom/customise panel/button" fixed="true">
+    <layout class="stick_to_sides_attachment" alignment="top,right" inset="6"/>
+
+    <!-- This is a bit clumsy but I can't think of a better way without using equally clumsy code -->
+    <!-- Animation to 'hide' the widget by drawing it out of the clipping area -->
+    <!--<animation class="translate_animation" trigger_id="hidden" trigger_value="false" start_value="100.0,0.0" end_value="100.0,0.0" duration="0.1" end_mode="hold_end" apply_to_mouse="false"/>-->
+    <!-- Animations to move it back and fade it in when moused over  -->
+    <!--<animation class="translate_animation" trigger_start="msen" trigger_end="msex" start_value="-100.0,0.0" end_value="-100.0,0.0" duration="0.01" end_mode="hold_auto_reverse" apply_to_mouse="false"/>-->
+    <!--<animation class="fade_animation" trigger_start="msen" trigger_end="msex" start_value="0.0" end_value="1.0" duration="0.4" end_mode="hold_auto_reverse"/>-->
+  </widget>
+
+  <widget class="person_history_biography_panel" id="phb1" file="person/person history biography no title" late_loading="true">
+    <translation id="title" translation_id="295868" type="use" value="Biography[COMMENT: player history panel; title of biography titled box]" />
+  </widget>
+
+  <widget file="player/player attribute analyser panel" id="" class="client_object_viewer_xml_panel" late_loading="true">
+    <translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
+  </widget>
+
+   
+  
+            <widget class="player_physical_stats_panel" id="ppsp" late_loading="true">
+            <translation id="title" translation_id="230003" type="use" value="Physical" />
+          </widget>
+  
+          <widget class="player_bans_overview_panel" id="pbop" late_loading="true">
+            <translation id="title" translation_id="247569" type="use" value="Bans" />
+          </widget>
+       
+       
+          <widget class="player_status_all_panel" id="plst" late_loading="true" default_for_unemployed_managers="true" default_for_international_managers_other_team="true" default_for_everyone_else="false">
+            <translation id="title" translation_id="227764" type="use" value="Player Status" />
+          </widget>
+          <widget class="player_transfer_information_small_panel" id="ptri" late_loading="true">
+            <translation id="title" translation_id="316646" type="use" value="Transfer Info" />
+          </widget>
+          <widget class="player_contract_panel" id="pcon" file="player/player contract small" late_loading="true">
+            <translation id="title" translation_id="230163" type="use" value="Contract" />
+          </widget>
+       
+	   
+         <widget class="player_additional_stats_panel" file="player/player additional stats small" id="pstp" >
+		<translation id="title" translation_id="385617" type="use" value="Season Stats[COMMENT: player overview; player stats by competition panel title]" />
+		  </widget>
+		  
+		  <widget class="player_stats_panel" file="player/custom/player stats small1" id="psrp" >
+		<translation id="title" translation_id="385617" type="use" value="Season Stats[COMMENT: player overview; player stats by competition panel title]" />
+		  </widget>
+		  
+		    <widget class="player_stats_panel" id="pslp" >
+	 <translation id="title" translation_id="248440" type="use" value="Player Stats" />
+		  </widget>
+		  
+	<widget class="player_scout_reports_panel" id="pscR" file="player/yacs compare" late_loading="true">
+		<translation id="title" translation_id="248428" type="use" value="Comparison" />
+	</widget>
+		  		  	  
+		  
+		  <widget class="player_availability_panel" id="pall" >          
+						  <translation id="title" translation_id="247568" type="use" value="Selection Details" />
+  <record id="object_property">
+                    <integer id="get_property" value="objt" />
+                    <integer id="set_property" value="objt" />
+                  </record>
+                </widget>
+      
+         <widget class="player_form_summary_panel" id="Pfor" file="player/player form summary panel profile" late_loading="true">
+    <translation id="title" translation_id="308194" type="use" value="Form[COMMENT: team form 5 games, all competitions, short version]" />
+  </widget>
+       
+        
+						     <widget class="preferred_moves_panel" id="ppfm" file="player/yacs traits only w HS">
+                               <translation id="title" translation_id="229993" type="use" value="Player Traits" />
+							   <record id="object_property">
+                                     <integer id="get_property" value="objt"/>
+                                     <integer id="set_property" value="objt"/>
+                                </record>
+                      </widget> 
+<widget class="player_history_achievements_panel" id="pac4" file="player/player history achievements small" late_loading="true">
+          <translation id="title" translation_id="329749" type="use" value="Career Achievements" />
+        </widget>
+       	
+
+     <!-- <widget class="person_achievements_summary_panel" id="pxcs" auto_size="vertical" default_height="181" priority="4">
+				<translation id="title" translation_id="229368" type="use" value="Awards" />
+                  <record id="object_property">
+                    <integer id="get_property" value="objt" />
+                    <integer id="set_property" value="objt" />
+                  </record>
+                </widget>-->		
+  
+  
+  
+</panel>

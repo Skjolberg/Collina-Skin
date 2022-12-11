@@ -1,0 +1,52 @@
+<panel>
+  <container id="SUBP" class="main_box" red_replacement="">
+    <layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+    <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+  </container>
+
+  <widget class="popup_button" id="popv"  auto_size="horizontal" height="20" click_event="msis" appearance="buttons/custom/customise panel/button" fixed="true">
+    <layout class="stick_to_sides_attachment" alignment="top,right" inset="0"/>
+
+    <!-- This is a bit clumsy but I can't think of a better way without using equally clumsy code -->
+    <!-- Animation to 'hide' the widget by drawing it out of the clipping area -->
+    <!--<animation class="translate_animation" trigger_id="hidden" trigger_value="false" start_value="100.0,0.0" end_value="100.0,0.0" duration="0.1" end_mode="hold_end" apply_to_mouse="false"/>-->
+    <!-- Animations to move it back and fade it in when moused over  -->
+    <!--<animation class="translate_animation" trigger_start="msen" trigger_end="msex" start_value="-100.0,0.0" end_value="-100.0,0.0" duration="0.01" end_mode="hold_auto_reverse" apply_to_mouse="false"/>-->
+    <!--<animation class="fade_animation" trigger_start="msen" trigger_end="msex" start_value="0.0" end_value="1.0" duration="0.4" end_mode="hold_auto_reverse"/>-->
+  </widget>
+
+
+
+
+
+
+  <widget class="person_history_biography_panel" id="phb1" file="person/person history biography no title" late_loading="true">
+    <translation id="title" translation_id="295868" type="use" value="Biography[COMMENT: player history panel; title of biography titled box]" />
+  </widget>
+<widget class="player_personal_details_panel" id="gzpD" file="player/gunzo/gunzo player profile tab4" late_loading="true">
+    <translation id="title" translation_id="227737" type="use" value="Club" />
+  </widget>
+         
+<widget class="person_personal_information_panel" id="ypib" file="player/yacs information"  late_loading="true">
+		<translation id="title"  type="use" value="Information" />
+	</widget>
+
+  <widget class="player_scout_reports_panel" id="pscR" file="player/cfm/cfm player comparison2" late_loading="true">
+    <translation id="title" translation_id="248428" type="use" value="Comparison" />
+  </widget>
+  <widget file="player/player attribute analyser panel" id="paAn" class="client_object_viewer_xml_panel" late_loading="true">
+    <translation id="title" translation_id="334971" type="use" value="Attribute Analysis[COMMENT: player overview; title for a panel showing an attribute analyisis diagram]" />
+  </widget>
+  <widget class="player_scout_reports_panel" id="psrt" file="player/player scout reports profile1" late_loading="true" valid_for_unemployed_managers="false" valid_for_international_managers_other_team="false">
+    <translation id="title" translation_id="248079" type="use" value="Report" />
+  </widget> 
+	<widget class="playing_history_summary_panel" id="Pcrs" file="person/cfm/cfm playing history summary" late_loading="true">
+		<translation id="title" translation_id="247605" type="use" value="Career Stats" />
+	</widget>
+	
+	<widget class="player_attributes_panel" file="player/custom/player attributes boxes popup panel" id="pat3" late_loading="true">
+				<translation id="title" value="Attributes in Boxes"/>
+				
+			</widget>
+
+</panel>

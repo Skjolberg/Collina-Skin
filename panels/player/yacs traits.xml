@@ -1,0 +1,79 @@
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="0"/>
+	<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="0"/>
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true"/>
+	<container>
+		<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" />
+		<container class="bordered_box">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" />
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_alignment="fill" horizontal_offset="0" vertical_inset="0" />
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="10" vertical_gap="0" />
+					<widget class="label" font="title" colour="bg custom green" auto_size="vertical">
+						<record id="object_property" get_property="PPst" name="true" />
+					</widget>
+					<widget class="personality_label" auto_size="vertical">
+						<record id="object_property" get_property="PPst" />
+					</widget>
+				</container>
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="10" vertical_gap="0" />
+					<widget class="label" font="title" colour="bg custom green"  auto_size="vertical">
+						<record id="object_property" get_property="Pghm" name="true" />
+					</widget>
+					<widget class="media_handling_label" auto_size="vertical">
+						<record id="object_property" get_property="Pghm" />
+					</widget>
+				</container>
+			</container>
+		</container>
+		<container class="bordered_box">
+			<attachment_group class="vertical_arrange_autosize" vertical_offset="10" vertical_gap="0" />
+			<widget class="label" font="title" colour="bg custom green" auto_size="vertical">
+				<translation id="text" translation_id="402385" type="use" value="Player Traits[COMMENT: label for the previously named 'Preferred Moves' section (ID 229993), changed to Player Traits because it fits all potential options more suitably]" />
+			</widget>
+			<container class="player_attributes_panel" file="none">
+				<record id="object_property" get_property="objt" set_property="objt" />
+				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="20" />
+				<widget class="preferred_moves_panel" auto_size="vertical" file="player/player information preferred moves" id="pfmp">
+					<record id="object_property" get_property="objt" set_property="objt" />
+				</widget>
+				<container hidn="true">
+					<attachment_group class="vertical_arrange_autosize" vertical_offset="0" vertical_gap="0" />
+					<record id="object_property">
+						<list id="get_properties">
+							<record>
+								<integer id="get_property" value="Ptrt" />
+								<integer id="set_property" value="Shwn" />
+							</record>
+						</list>
+					</record>
+					<widget class="preferred_move_popup_button" id="nPPM" appearance="buttons/standard/normal/button" alignment="left,centre_y" auto_size="vertical">
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="PmCo" />
+									<integer id="set_property" value="valu" />
+								</record>
+							</list>
+						</record>
+					</widget>
+					<widget class="preferred_move_label" id="ppML" alignment="left,centre_y" auto_size="vertical">
+						<record id="object_property">
+							<list id="get_properties">
+								<record>
+									<integer id="get_property" value="PTpm" />
+									<integer id="set_property" value="valu" />
+								</record>
+							</list>
+						</record>
+					</widget>
+					<widget class="button" hidden="true" click_event="PPMC" id="cPPM" alignment="left,centre_y" auto_size="all">
+						<translation id="text" translation_id="229828" type="use" value="Cancel" />
+					</widget>
+				</container>
+			</container>
+		</container>
+	</container>
+</panel>

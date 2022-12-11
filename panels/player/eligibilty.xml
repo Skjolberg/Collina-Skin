@@ -1,0 +1,68 @@
+<panel>
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+	<container>
+	
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0"/>
+
+		<container >
+			<layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="3"/>
+			<layout class="stick_to_sides_attachment" alignment="horizontal" apply_to_children="true" inset="0"/>
+
+			<container height="15">
+				<layout class="stick_to_sides_attachment" alignment="left" inset="0" apply_to_children="true" />
+				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+
+				<string id="skin_style" value="title link" />
+
+				<!-- Linked header -->
+				<widget class="link_button" id="Ppin" section="Ppin" auto_size="horizontal" colour="accent" red_replacement="accent">
+					<translation id="text" type="use" translation_id="260816" value="Eligibility" />
+				</widget>
+			</container>
+
+			<container>
+				<attachment_group class="horizontal_arrange_vertical_autosize" horizontal_layout="-15,-1,-15" horizontal_gap="0" vertical_inset="0" />
+
+				<!-- Nations -->
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="8" vertical_offset="0" horizontal_inset="0" />							
+
+					<widget class="label" font="text" size="normal" alignment="centre_x,top,can_scale" auto_size="vertical" colour="text">
+				
+			
+						<translation id="text" translation_id="363691" type="use" value="Nation trained in[COMMENT: player information; nation player trained at for purposes of domestic eligibility]" />
+					</widget>
+					<container class="simple_data_list" id="nats" set_property="objt" alignment="horizontal,fill" height="100">
+						<record id="object_property">
+							<integer id="get_property" value="PhgN" />
+						</record>
+						<record id="widget_properties" class="client_object_viewer_xml_panel" file="player/eligibility logo"/>
+					</container>
+				</container>
+				
+				<widget class="picture" file="dividers/standard/vertical/line" height="150" image_alignment="centre" />
+				
+				
+
+				<!-- Clubs -->
+				<container>
+					<attachment_group class="vertical_arrange_autosize" vertical_gap="8" vertical_offset="0" horizontal_inset="0" />
+
+					<widget class="label" font="text" size="normal" alignment="centre_x,top,can_scale" auto_size="vertical" colour="text">
+			
+						
+						<translation id="text" translation_id="363611" type="use" value="Club trained at[COMMENT: player information; nation player trained at for purposes of domestic eligibility]" />
+					</widget>
+					<container class="simple_data_list" id="clbs" set_property="objt" alignment="horizontal,fill" height="100">
+						<record id="object_property">
+							<integer id="get_property" value="PhCe" />
+						</record>
+						<record id="widget_properties" class="property_list_viewer_xml_panel" file="player/eligibility logo" />
+					</container>
+				</container>
+			</container>
+		</container>
+	</container>
+	
+</panel>

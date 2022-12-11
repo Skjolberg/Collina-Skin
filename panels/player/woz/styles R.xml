@@ -1,0 +1,32 @@
+<panel navigation_container="true">
+	<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+
+	<container  id="SUBP" >
+		<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="0" />
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</container>
+	
+	<!-- Make sure everything is late loading! -->
+	<container class="tabbed" id="tabP" save_session_state="true" late_loading="true">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>			
+		<container class="client_object_viewer_selector_panel" id="ildc" file="player/woz/counterR" save_session_state="true">
+			<translation id="title" translation_id="298013" type="use" />
+			<record id="object_property" get_property="objt" set_property="objt"/>
+		</container>
+		
+		<widget class="client_object_viewer_selector_panel" id="tagR" file="player/woz/gegenR" save_session_state="true">
+			<record id="object_property" get_property="objt" set_property="objt"/>
+			<translation id="title" translation_id="466629" type="use" />
+		</widget>			
+			
+		<widget class="client_object_viewer_selector_panel" id="tatR" file="player/woz/tikiR" save_session_state="true">
+			<record id="object_property" get_property="objt" set_property="objt"/>
+			<translation id="title" translation_id="466632" type="use" />
+		</widget>	
+			
+		
+	</container>
+
+		
+	</panel>
+					

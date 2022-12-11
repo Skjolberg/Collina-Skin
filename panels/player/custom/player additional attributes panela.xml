@@ -1,0 +1,164 @@
+<!-- Panel displaying extra attributes a bout a player, for example condition, footedness etc -->
+<!-- Meant to be used with a CLIENT_OBJECT_XML_PANEL -->
+<panel>
+	<layout class="arrange_vertical_attachment" alignment="top, extend" offset="4" gap="0" />
+	<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+	<container id="topc">
+		<layout class="arrange_vertical_attachment" alignment="top" offset="0" gap="8" do_not_size="true"/>
+		<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" gap="8" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		<!-- Preferred Foot-->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+			<layout class="fit_children_attachment" alignment="vertical, fill" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<widget class="label" id="Pfo:" auto_size="vertical" font="title" colour="bg custom green">
+				<record id="object_property" get_property="Pfot" name="true" />
+			</widget>
+			<widget class="foot_label" id="Pfot" auto_size="vertical">
+				<record id="object_property" get_property="Pfot" />
+			</widget>
+		</container>
+
+		<widget class="picture" file="dividers/standard/horizontal/line" height="3" image_alignment="centre" />
+
+		<!-- Personality -->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+			<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<widget class="label" id="PPs:" auto_size="vertical" font="title" colour="bg custom green">
+				<record id="object_property" get_property="PPst" name="true" />
+			</widget>
+			<widget class="personality_label" id="PPst" auto_size="vertical">
+				<record id="object_property" get_property="PPst" />
+			</widget>
+		</container>
+
+		<widget class="picture" file="dividers/standard/horizontal/line" height="3" image_alignment="centre" />
+
+		<!-- Media Description -->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+			<layout class="fit_children_attachment" alignment="vertical, fill" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<widget class="label" id="Pde:" auto_size="vertical" font="title" colour="bg custom green">
+				<record id="object_property" get_property="Pdes" name="true" />
+			</widget>
+			<widget class="player_description_text" id="Pdes" auto_size="vertical">
+				<record id="object_property" get_property="Pdes" />
+			</widget>
+		</container>
+
+		<widget class="picture" file="dividers/standard/horizontal/line" height="3" image_alignment="centre" />
+
+		<!-- Goalkeeper rating -->
+		<container>
+			<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+			<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+			<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+			<container id="GKRA">
+				<layout class="arrange_vertical_attachment" alignment="top" offset="0" do_not_size="true" />
+				<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+				<record id="object_property" get_property="Pigo" set_property="hidn" />
+
+				<widget class="label" id="Pgk:" auto_size="vertical" font="title" colour="bg custom green">
+					<record id="object_property" get_property="PgkR" name="true" />
+				</widget>
+				<widget class="dashed_number_label" id="PgkR" auto_size="vertical">
+					<record id="object_property" get_property="PgkR" />
+				</widget>
+			</container>
+
+			<!-- Outfield rating -->
+			<container id="OFRA">
+				<layout class="arrange_vertical_attachment" alignment="top" offset="010" do_not_size="true" />
+				<layout class="fit_children_attachment" alignment="vertical,fill" offset="0" />
+				<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+				<record id="object_property" get_property="Pigo" set_property="Shwn" />
+
+				<widget class="label" id="Pof:" auto_size="vertical" font="title" colour="bg custom green">
+					<record id="object_property" get_property="PofR" name="true" />
+				</widget>
+				<widget class="dashed_number_label" id="PofR" auto_size="vertical">
+					<record id="object_property" get_property="PofR" />
+				</widget>
+			</container>
+		</container>
+
+		<widget class="picture" file="dividers/standard/horizontal/line" height="3" image_alignment="centre" />
+	</container>
+
+	 <container class="animated_wipe_cycle_fade_container" id="topc" interval="4">
+<!--
+<container  class="vertical_adaptive_container" layout="-1,-1" height="40" inset="0" offset="0" gap="10">
+                                                <widget class="table" layout="-1,-1" auto_size_rows="true" auto_size="vertical" row_spacing="0">
+				<widget class="picture" file="icons/custom/footed/left" image_alignment="centre" height="35" width="35" col="1" row="0" row_span="2" />
+				<widget class="label" alignment="right" auto_size="vertical" font="label" spec="small" col="0" row="0" colour="white">
+					<translation id="text" translation_id="230000" type="use" value="Left Foot" />
+				</widget>
+				<widget class="footedness_label" alignment="right" id="fotL" auto_size="vertical" format="[%string#1]" col="0" row="1">
+					<record id="object_property">
+						<integer id="get_property" value="Plft" />
+					</record>
+				</widget>
+			</widget>
+			<widget class="table" layout="-1, -1" auto_size_rows="true" auto_size="vertical" row_spacing="0">
+				<widget class="picture" file="icons/custom/footed/right" image_alignment="centre" height="35" width="35" col="0" row="0" row_span="2" />
+				<widget class="label" auto_size="vertical" font="label" spec="small" col="1" row="0" colour="white">
+					<translation id="text" translation_id="230001" type="use" value="Right Foot" />
+				</widget>
+				<widget class="footedness_label" id="fotR" auto_size="vertical" format="[%string#1]" col="1" row="1">
+					<record id="object_property">
+						<integer id="get_property" value="Prft" />
+					</record>
+				</widget>
+			</widget>
+		</container> -->
+
+
+
+
+             <!-- Agent -->
+		  <container>
+                  <layout class="arrange_vertical_attachment" layout="-1,-1" offset="0" gap="0" />
+                  <layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		  <widget class="label" id="Agn:" alignment="centre_x,bottom" colour="title" size="small" >
+                  <translation id="text" translation_id="308473" type="use" value="Agent" />
+		  </widget>
+	          <widget class="person_button" size="10" alignment="centre_x,top,can_scale" colour="title" >
+		  <record id="object_property" get_property="Pagn"/>
+		  </widget>
+                  </container>
+
+           <!-- Preferred moves -->
+	<container id="botc">
+		<layout class="arrange_vertical_attachment" alignment="top, extend" offset="10" />
+		<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
+
+		<widget class="label" auto_size="vertical" font="title" colour="bg custom green">
+			<translation id="text" translation_id="402385" type="use" value="Player Traits[COMMENT: label for the previously named 'Preferred Moves' section (ID 229993), changed to Player Traits because it fits all potential options more suitably]" />
+		</widget>
+
+		<container class="scrolling_box">
+			<widget class="preferred_moves_panel" file="player/player information preferred moves" id="pfmp" auto_size="vertical">
+				<record id="object_property" get_property="objt" set_property="objt" />
+			</widget>
+  </container>
+      </container>
+           </container>
+
+
+
+
+</panel>
