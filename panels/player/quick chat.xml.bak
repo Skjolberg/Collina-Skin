@@ -42,7 +42,7 @@
 				<!-- Diálogo charla rápida -->
                 <container class="plain_box" width="500" appearance="boxes/bordered/standard/paper26"  alignment="left" blue_replacement="green 400" >
                     <attachment_group class="vertical_arrange_autosize" />
-                    <widget class="text" id="stQU" height="45" alignment="left, centre_y">
+                    <widget class="text" id="stQU" height="45" alignment="left, centre_y" padding="25">
                     </widget>
                 </container>
             </container>

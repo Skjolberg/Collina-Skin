@@ -1,0 +1,26 @@
+﻿<panel  use_hit_mask="true">
+	<flags id="selected_appearance" value=""/>
+
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_inset="0"/>
+	<container clas="bordered_box"   appearance="boxes/bordered/standard/tac" red_replacement="bg lighter">
+	<attachment_group class="vertical_arrange_autosize" vertical_gap="0" vertical_inset="0"/>
+
+
+
+		
+	<container height="20">
+	<attachment class="horizontal_arrange" horizontal_alignment="fill" horizontal_gap="2"/> 
+	<!--rating-->
+	<widget class="tactical_role_label" id="role" abbt="true" size="xxsmall" auto_size="vertical" alignment="centre,can_scale" style="bold" >
+		<global id="hidden" name="ui.is_fmt_controller_skin"/>
+	</widget>
+<widget class="match_rating_label_formatted"  id="avra" size="8.5" alignment="centre,can_scale" format="[%fraction#1-2.1]" navigation_focus_target="false"/> 
+
+
+
+	</container>
+		<container height="1"/>
+<widget class="text" auto_size="vertical" id="name" colour="text" size="xsmall" alignment="centre,can_scale" multiline="false" style="bold"/>	
+	
+	</container>
+</panel>
