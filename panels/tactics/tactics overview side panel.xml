@@ -77,6 +77,7 @@
 			<boolean id="exclude_from_find" value="true"/>
 			<layout class="stick_to_sides_attachment" embed_in_frame="true" alignment="all" inset="0"/>
 		</widget>
+		<!-- Top bar (3 tácticas, familiaridad, intensidad)-->
     	<container class="main_contrast_box_no_margin" red_replacement="inbox_sidebar_background" entity_layout_id="at01" id="at01" sub_group_id="NULL_ID" name="top bar" height="38">
 			<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" move_side="true" target="main"/>
 			<layout class="stick_to_object_attachment" id="align_left" offset="0" get_side="left" set_side="left" target="main"/>
@@ -103,11 +104,13 @@
 				<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="top" set_side="top" move_side="true" target="main"/>
 				<layout class="stick_to_object_attachment" id="align_left" offset="4" get_side="right" set_side="left" move_side="true" target="at09"/>
 			</widget>
+			
 			<container class="tactic_slot_tab_container" entity_layout_id="it08" file="tactics/tactic slot tab container picker" id="tacw" auto_size="horizontal" needs_width="true" height="30" name="active tactic">
 				<integer id="slot_popup_maximum_width" value="200"/>
 				<layout class="stick_to_object_attachment" id="align_top" offset="5" get_side="top" set_side="top" move_side="true" target="main"/>
 				<layout class="stick_to_object_attachment" id="align_left" offset="8" get_side="right" set_side="left" move_side="true" target="at03"/>
 			</container>
+
 			<container class="tactic_slot_tab_container" entity_layout_id="it17" file="tactics/tactic slot tab container intensity" id="tstI" width="100" height="30" name="Intensity">
 				<layout class="stick_to_object_attachment" id="align_top" offset="4" get_side="top" set_side="top" move_side="true" target="main"/>
 				<layout class="stick_to_object_attachment" id="align_right" offset="-12" get_side="right" set_side="right" move_side="true" target="main"/>
@@ -156,13 +159,13 @@
 				<layout class="stick_to_object_attachment" id="align_top" offset="15" get_side="top" set_side="top" move_side="true" target="main"/>
 				<layout class="stick_to_object_attachment" id="align_left" offset="60" get_side="left" set_side="left" move_side="true" target="main"/>
 			</container>
-			<container class="tactic_slot_button" entity_layout_id="it28" id="frm1" file="tactics/tactic slot button formation" alignment="centre_x,centre_y" width="610" height="22" name="formation">
+			<container class="tactic_slot_button" entity_layout_id="it28" id="frm1" file="tactics/tactic slot button formation" alignment="centre_x,centre_y" width="510" height="22" name="formation">
 				<integer id="tactics_slot" value="1"/>
 				<string id="menu_mode" value="0x00000081"/>
 				<layout class="stick_to_object_attachment" id="align_top" offset="15" get_side="top" set_side="top" move_side="true" target="main"/>
 				<layout class="stick_to_object_attachment" id="align_left" offset="60" get_side="left" set_side="left" move_side="true" target="main"/>
 			</container>
-			<container class="tactic_slot_button" entity_layout_id="it29" id="frm2" file="tactics/tactic slot button formation" alignment="centre_x,centre_y" width="610" height="22" name="formation">
+			<container class="tactic_slot_button" entity_layout_id="it29" id="frm2" file="tactics/tactic slot button formation" alignment="centre_x,centre_y" width="510" height="22" name="formation">
 				<integer id="tactics_slot" value="2"/>
 				<string id="menu_mode" value="0x00000081"/>
 				<layout class="stick_to_object_attachment" id="align_top" offset="15" get_side="top" set_side="top" move_side="true" target="main"/>
@@ -197,16 +200,18 @@
 			
 			<!-- 5 últimos partidos jugados -->
 			<widget class="link_button" appearance="buttons/subtle/normal2/button" section="TeRM" auto_size="all" alignment="centre"  red_replacement="secondary" colour="primary">
-				<layout class="stick_to_sides_attachment" alignment="right" inset="300" />
-				<layout class="stick_to_sides_attachment" alignment="bottom" inset="30" />
+				<layout class="stick_to_sides_attachment" alignment="right" inset="120" />
+				<layout class="stick_to_sides_attachment" alignment="bottom" inset="60" />
 				<translation id="text" value="Recent Matches" />
 			</widget>
 			<!-- Siguiente rival -->
 			<widget class="link_button" appearance="buttons/subtle/normal2/button" section="Tpor" auto_size="all" alignment="centre"  red_replacement="secondary" colour="primary">
-				<layout class="stick_to_sides_attachment" alignment="right" inset="200" />
-				<layout class="stick_to_sides_attachment" alignment="bottom" inset="30" />
+				<layout class="stick_to_sides_attachment" alignment="right" inset="20" />
+				<layout class="stick_to_sides_attachment" alignment="bottom" inset="60" />
 				<translation id="text" value="Next match" />
 			</widget>
+			
+			
 			
 		</container>
 		

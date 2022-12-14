@@ -10,7 +10,7 @@
 
 		 ============================================================
 		 -->
-
+		
 		<!-- global settings -->
 
 		<set_global name="ui.main_box_gap" >
@@ -1506,7 +1506,9 @@
 
 		<colour name="divider" red="42" green="183" blue="156"/> <!-- used for line dividers throughout the game -->
 
-		<!--colours for the position lines on the tactics pitch and widgets-->
+		<!--colours for the position lines on the tactics pitch and widgets -->
+		<!-- Default -->
+		<!--
 		<colour name="goalkeeper_line" red="19" green="26" blue="36" />
 		<colour name="defender_line" red="27" green="35" blue="48" />
 		<colour name="defensive_midfielder_line" red="27" green="40" blue="54" />
@@ -1514,8 +1516,17 @@
 		<colour name="attacking_midfielder_line"  red="43" green="64" blue="85" />
 		<colour name="attacker_line" red="54" green="79" blue="105"  />
 		<colour name="substitutes_line" red="29" green="44" blue="63" />
+		-->
+		
+		<colour name="goalkeeper_line" value="rgb(90,20,130)" />
+		<colour name="defensive_midfielder_line" value="rgb(25,120,210)" />
+		<colour name="defender_line" value="rgb(30,70,130)" />
+		<colour name="midfielder_line" value="rgb(45,134,52)" />
+		<colour name="attacking_midfielder_line" value="rgb(200,110,0)" />
+		<colour name="attacker_line" value="rgb(165,25,25)" />
+		<colour name="substitutes_line" value="bg lighter" />
 
-				<!-- Text colour for display of number of unread news items -->
+		<!-- Text colour for display of number of unread news items -->
 
 		<!-- objective colours -->
 		<colour name="required objective" red="16" green="53" blue="101"/>

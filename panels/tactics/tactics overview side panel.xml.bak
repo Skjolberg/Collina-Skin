@@ -202,6 +202,11 @@
 				<translation id="text" value="Recent Matches" />
 			</widget>
 			<!-- Siguiente rival -->
+			<widget class="link_button" appearance="buttons/subtle/normal2/button" section="Tpor" auto_size="all" alignment="centre"  red_replacement="secondary" colour="primary">
+				<layout class="stick_to_sides_attachment" alignment="right" inset="200" />
+				<layout class="stick_to_sides_attachment" alignment="bottom" inset="30" />
+				<translation id="text" value="Next match" />
+			</widget>
 			
 		</container>
 		

@@ -89,5 +89,6 @@
 			<record id="default_properties" colour="text" red_replacement="text"/>
 		</widget>
 
+
 	</container>
 </panel>

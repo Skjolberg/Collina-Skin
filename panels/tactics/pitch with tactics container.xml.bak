@@ -3,7 +3,7 @@
   <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" >
     <record id="auto_size_restrictions">
       <string id="type" value="value" />
-      <integer id="value" value="780" />
+      <integer id="value" value="810" />
       <string id="limit_type" value="maximum" />
       <string id="orientation" value="vertical" />
     </record>
@@ -15,12 +15,12 @@
   <container>
     <container class="pitch_with_tactics" id="pitc" name="pitch">
       <layout class="stick_to_sides_attachment" alignment="all"  />
-      <real id="pitch_perspective" value="0.010000" />
+      <real id="pitch_perspective" value="0.000000" />
       <string id="icon_flags" value="show_name,show_extra_details,use_overview_icons,drop_initial_if_possible,show_position_role_duty_suitability,show_selection_image,show_number,show_role_duty_labels,show_familiarity" />
       <string id="player_icon_file" value="tactics/tactics icon info panel match" />
       <string id="show_extra_details_buttons" value="true" />
       <string id="pitch_draw_grass" value="true" />
-      <string id="pitch_base_appearance" value="" />
+      <string id="pitch_base_appearance" value="backgrounds/default" />
       <string id="pitch_pattern" value="" />
       <integer id="pitch_vertical_padding" value="0" />
       <string id="vertical" value="true" />
