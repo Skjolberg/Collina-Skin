@@ -1,32 +1,32 @@
 <!-- this file lists the global panels that should be installed -->
 <panel>
-    <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
-    <container id="mai1">
-        <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
-    </container>
+	<container id="mai1">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" />
+	</container>
 
-    <!-- background picture - covers entire screen -->
-    <widget class="background" file="backgrounds/default" id="bgnd">
-        <!-- Once everything is hooked up we'll use a get global attachment like below tied to the
+	<!-- background picture - covers entire screen -->
+	<widget class="background" file="backgrounds/default" id="bgnd">
+		<!-- Once everything is hooked up we'll use a get global attachment like below tied to the
 			     appropriate global setting to show/hide instead of the complex test multiple global
 				 setups for the various items we'll show/hide -->
-        <!--<attachment class="get_global_attachment" get_property="background_visible" set_property="Shwn" />-->
-        <record id="object_property">
-            <integer id="get_property" value="bgnd" />
-            <integer id="set_property" value="file" />
-        </record>
-        <attachment class="test_multiple_globals_attachment" default_value="false">
-            <list id="get_properties">
-                <record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
-                <!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
-                <record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
-            </list>
-            <integer id="set_property" value="hidn" />
-        </attachment>
-    </widget>
+		<!--<attachment class="get_global_attachment" get_property="background_visible" set_property="Shwn" />-->
+		<record id="object_property">
+			<integer id="get_property" value="bgnd" />
+			<integer id="set_property" value="file" />
+		</record>
+		<attachment class="test_multiple_globals_attachment" default_value="false">
+			<list id="get_properties">
+				<record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
+				<!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
+				<record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
+			</list>
+			<integer id="set_property" value="hidn" />
+		</attachment>
+	</widget>
 
-<!-- 
+	<!-- 
     <widget class="picture" file="boxes/custom/interface/background pattern/fm23/paper">
         <layout class="stick_to_sides_attachment" alignment="all" inset="0" />
         <attachment class="test_multiple_globals_attachment" default_value="false">
@@ -40,74 +40,74 @@
     </widget>
  -->
 
-    <container file="background_selector/backgrounds" >
-        <attachment class="test_multiple_globals_attachment" default_value="false">
-          <list id="get_properties">
-            <record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
-            <record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
-          </list>
-          <integer id="set_property" value="hidn" />
-        </attachment>
-      </container>
+	<container file="background_selector/backgrounds">
+		<attachment class="test_multiple_globals_attachment" default_value="false">
+			<list id="get_properties">
+				<record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
+				<record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
+			</list>
+			<integer id="set_property" value="hidn" />
+		</attachment>
+	</container>
 
-    <widget class="inner_contrast_box" appearance="boxes/custom/interface/content/primary/paper">
-        <layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="mai1"/>
-        <layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="mai1"/>
-        <layout class="stick_to_object_attachment" id="align_right" get_side="right" use_recursive_search="true" set_side="left" target="side"/>
-        <layout class="stick_to_object_attachment" id="align_right" get_side="left" set_side="left" target="mai1"/>
+	<widget class="inner_contrast_box" appearance="boxes/custom/interface/content/primary/paper">
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="mai1"/>
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="mai1"/>
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" use_recursive_search="true" set_side="left" target="side"/>
+		<layout class="stick_to_object_attachment" id="align_right" get_side="left" set_side="left" target="mai1"/>
 
-        <animation class="translate_animation" start_value="0, 0.2" end_value="0, 0" duration="0.4" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_screen" />
-        <attachment class="test_multiple_globals_attachment" default_value="false">
-            <list id="get_properties">
-                <record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
-                <!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
-                <record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
-                <record get_property="HdBk" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
-            </list>
-            <integer id="set_property" value="hidn" />
-        </attachment>
-    </widget>
+		<animation class="translate_animation" start_value="0, 0.2" end_value="0, 0" duration="0.4" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_screen" />
+		<attachment class="test_multiple_globals_attachment" default_value="false">
+			<list id="get_properties">
+				<record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
+				<!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
+				<record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
+				<record get_property="HdBk" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
+			</list>
+			<integer id="set_property" value="hidn" />
+		</attachment>
+	</widget>
 
-        <widget class="inner_contrast_box" appearance="boxes/custom/interface/content/secondary/paper" transparency="0.1">
-        <layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="mai1"/>
-        <layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="mai1"/>
-        <layout class="stick_to_object_attachment" id="align_right" get_side="right" use_recursive_search="true" set_side="left" target="side"/>
-        <layout class="stick_to_object_attachment" id="align_right" get_side="left" set_side="left" target="mai1"/>
+	<widget class="inner_contrast_box" appearance="boxes/custom/interface/content/secondary/paper" transparency="0.1">
+		<layout class="stick_to_object_attachment" id="align_top" get_side="top" set_side="top" target="mai1"/>
+		<layout class="stick_to_object_attachment" id="align_bottom" get_side="bottom" set_side="bottom" target="mai1"/>
+		<layout class="stick_to_object_attachment" id="align_right" get_side="right" use_recursive_search="true" set_side="left" target="side"/>
+		<layout class="stick_to_object_attachment" id="align_right" get_side="left" set_side="left" target="mai1"/>
 
-        <animation class="translate_animation" start_value="0, 0.2" end_value="0, 0" duration="0.4" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_screen" />
-        <attachment class="test_multiple_globals_attachment" default_value="false">
-            <list id="get_properties">
-                <record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
-                <!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
-                <record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
-                <record get_property="HdBk" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
-            </list>
-            <integer id="set_property" value="hidn" />
-        </attachment>
-    </widget>
+		<animation class="translate_animation" start_value="0, 0.2" end_value="0, 0" duration="0.4" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_screen" />
+		<attachment class="test_multiple_globals_attachment" default_value="false">
+			<list id="get_properties">
+				<record get_property="MatS" test_mode="equal" value="true" skip_if_null="true" />
+				<!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
+				<record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
+				<record get_property="HdBk" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
+			</list>
+			<integer id="set_property" value="hidn" />
+		</attachment>
+	</widget>
 
-    <!-- match background picture - covers entire screen -->
-    <widget class="picture" id="Mbkg" scale_picture="true" keep_aspect_ratio="false">
-        <record id="object_property">
-            <integer id="get_property" value="bgnd" />
-            <integer id="set_property" value="file" />
-        </record>
-        <attachment class="test_multiple_globals_attachment" default_value="true">
-            <list id="get_properties">
-                <record get_property="MatS" test_mode="equal" value="false" skip_if_null="true" />
-                <!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
-                <record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
-            </list>
-            <integer id="set_property" value="hidn" />
-        </attachment>
-    </widget>
+	<!-- match background picture - covers entire screen -->
+	<widget class="picture" id="Mbkg" scale_picture="true" keep_aspect_ratio="false">
+		<record id="object_property">
+			<integer id="get_property" value="bgnd" />
+			<integer id="set_property" value="file" />
+		</record>
+		<attachment class="test_multiple_globals_attachment" default_value="true">
+			<list id="get_properties">
+				<record get_property="MatS" test_mode="equal" value="false" skip_if_null="true" />
+				<!-- PROP_FULL_SCREEN_3D_BEING_DRAWN -->
+				<record get_property="Ma3D" test_mode="equal" value="true" comparison_mode="or" skip_if_null="true" />
+			</list>
+			<integer id="set_property" value="hidn" />
+		</attachment>
+	</widget>
 
-    <!-- custom background scene -->
-    <container id="cBsC">
-        <layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
+	<!-- custom background scene -->
+	<container id="cBsC">
+		<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
 
-        <!--widgets added in code here-->
-    </container>
+		<!--widgets added in code here-->
+	</container>
 
 	<container>
 		<layout class="arrange_horizontal_attachment" alignment="left,extend" gap="0" offset="0" />
@@ -141,11 +141,11 @@
 			<container>
 
 				<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true" />
-				
+
 				<!-- match - covers entire lower part of screen when looking at a match -->
 				<widget class="match_highlights_panel" id="full" pitch_unique_id="full">
 
-				
+
 					<record id="object_property">
 						<integer id="get_property" value="objt" />
 						<integer id="set_property" value="objt" />
@@ -157,24 +157,24 @@
 					<layout class="stick_to_sides_attachment" alignment="horizontal" inset="0" apply_to_children="true" />
 
 					<animation class="translate_animation" start_value="0, -0.2" end_value="0, 0" duration="0.4" end_mode="hold_end" tween="ease_out" coord_mode="relative_to_screen" />
-					
+
 					<!-- header area at top of screen - with title, menus, etc -->
 					<container id="head" class="header_panel">
 						<attachment class="get_global_attachment" get_property="hide_header" set_property="hidn" />
 
-						<record id="object_property" get_property="objt"  set_property="objt"/>
+						<record id="object_property" get_property="objt" set_property="objt"/>
 
 					</container>
-					
-					
+
+
 
 					<!-- custom headers container -->
 					<container id="heaC">
 						<attachment class="get_global_attachment" get_property="hide_header" set_property="Shwn" />
-						
+
 						<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0"/>
 						<!-- widgets get dynamically added there when browsing to a section that wants a custom header-->
-						
+
 					</container>
 
 					<container id="main">
@@ -219,7 +219,7 @@
 									<integer id="set_property" value="hidn" />
 								</attachment>
 
-							
+
 								<!-- coloured actions bar image -->
 								<widget class="main_box" id="ACTb" appearance="boxes/custom/interface/tab bar/paper" red_replacement="primary"/>
 
@@ -229,43 +229,43 @@
 
 									<!-- actions and sections bar -->
 									<!-- please dont change the ID of this bar, if you really need to please notify Isaac as it will effect gamepad stuff :) -->
-									<container navigation_container="true" id="tBAR" >
+									<container navigation_container="true" id="tBAR">
 										<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" />
 										<container class="sections_menu_strip" id="acse" />
 									</container>
 
 									<!--Match Options-->
 									<widget class="match_tactics_toggle_button" />
-									
+
 									<!--Backroom Advice-->
 									<widget class="backroom_advice_trigger_button" id="BaC1" />
-									
-									
-									
-																			<!-- Graphics Options-->
-		<widget class="menubar_icon_button" appearance="buttons/custom/interface/navigation bar/button1" cant_be_toggled="true" fixed="true" icon="icons/26px/bs" width="40">
-                <record id="primary_icon_properties" red_replacement="white" />
-                    <record id="secondary_icon_properties" red_replacement="white" />
-			<event id="click_event" event_id="kev3"/>
 
-			<attachment class="event_relay_attachment" event_id="kev3">
-				<record id="action_event">
-					<flags id="event_id" value="show"/>
-					<flags id="event_target" value="bgs1"/>
-				</record>
-			</attachment>
 
-		</widget>	
-		
-				<!-- editor icon  -->
-				<widget class="edit_object_icon_button" id="edit" fixed="true" icon="icons/16px/edit" icon_alignment="centre" appearance="chrome/buttons/items/button" auto_size="none" multiline="false" width="44" secondary_icon_enabled="false">
-                        <record id="primary_icon_properties" red_replacement="bg custom green" />
-                        <attachment class="flash_colour_attachment" auto_start="false" rate="850">
-                            <colour id="first_colour" red="49" green="52" blue="63" />
-                            <colour id="second_colour" red="46" green="103" blue="182" />
-                            <flags id="colour_property" value="bkcl" />
-                        </attachment>
-                   </widget>	
+
+									<!-- Graphics Options-->
+									<widget class="menubar_icon_button" appearance="buttons/custom/interface/navigation bar/button1" cant_be_toggled="true" fixed="true" icon="icons/26px/bs" width="40">
+										<record id="primary_icon_properties" red_replacement="white" />
+										<record id="secondary_icon_properties" red_replacement="white" />
+										<event id="click_event" event_id="kev3"/>
+
+										<attachment class="event_relay_attachment" event_id="kev3">
+											<record id="action_event">
+												<flags id="event_id" value="show"/>
+												<flags id="event_target" value="bgs1"/>
+											</record>
+										</attachment>
+
+									</widget>
+
+									<!-- editor icon  -->
+									<widget class="edit_object_icon_button" id="edit" fixed="true" icon="icons/16px/edit@2x" icon_alignment="centre" appearance="chrome/buttons/items/button" auto_size="none" multiline="false" width="44" secondary_icon_enabled="false">
+										<record id="primary_icon_properties" red_replacement="bg custom green" />
+										<attachment class="flash_colour_attachment" auto_start="false" rate="850">
+											<colour id="first_colour" red="49" green="52" blue="63" />
+											<colour id="second_colour" red="46" green="103" blue="182" />
+											<flags id="colour_property" value="bkcl" />
+										</attachment>
+									</widget>
 
 									<!--Backroom Advice 'popup'-->
 									<widget class="backroom_advice_trigger_button" id="BaC2" file="club/backroom advice trigger button popup panel" disable_layout_attachments_when_embedded="true" hidden="true" />
@@ -277,24 +277,24 @@
 								<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true"/>
 
 
-									<!-- main area - contains sections/actions panel and content areas -->
-									<container id="main">
-										<layout class="arrange_horizontal_attachment" alignment="middle,extend" gap="0" offset="0"/>
-										<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
+								<!-- main area - contains sections/actions panel and content areas -->
+								<container id="main">
+									<layout class="arrange_horizontal_attachment" alignment="middle,extend" gap="0" offset="0"/>
+									<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true" />
 
 
-										<!-- screen content area -->
-										<container id="scca" auto_size="horizontal">
-											<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="2">
-<!-- 
+									<!-- screen content area -->
+									<container id="scca" auto_size="horizontal">
+										<layout class="stick_to_sides_attachment" alignment="all" apply_to_children="true" inset="2">
+											<!-- 
 												<global id="inset" name="ui.main_content_margin"/>
  -->
-											</layout>
-										</container>
-
+										</layout>
 									</container>
-									
-						
+
+								</container>
+
+
 
 							</container>
 
@@ -309,7 +309,7 @@
 				<attachment_group class="vertical_arrange_autosize" vertical_offset="0" horizontal_inset="0"/>
 			</container>
 
-		
+
 		</container>
 
 		<!--replay controls-->
