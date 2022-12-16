@@ -323,7 +323,7 @@
 		<colour name="bg red darker" 																value="red 800" />
 	  <colour name="bg pink lighter" 															value="pink 600" />
 		<colour name="bg pink" 																			value="pink 700" />
-		<colour name="bg pink darker" 															value="pink 800" />
+		<colour name="bg pink darker" 															value="rgb(255, 0, 77)" />
 	  <colour name="bg purple lighter" 														value="purple 600" />
 		<colour name="bg purple" 																		value="purple 700" />
 		<colour name="bg purple darker" 														value="purple 800" />

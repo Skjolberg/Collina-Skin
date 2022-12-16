@@ -6,7 +6,7 @@
 	<record id="image_slices" left="15" right="15" top="15" bottom="15" />
 
 	<!-- Background color del menú seleccionado -->
-	<colour id="red_replacement" name="bg custom green"/>
+	<colour id="red_replacement" name="bg pink darker"/>
 
 	
 </properties>

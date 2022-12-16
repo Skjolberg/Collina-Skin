@@ -199,15 +199,15 @@
 			-->
 			
 			<!-- 5 últimos partidos jugados -->
-			<widget class="link_button" appearance="buttons/subtle/normal2/button" section="TeRM" auto_size="all" alignment="centre"  red_replacement="secondary" colour="primary">
+			<widget class="link_button" appearance="buttons/subtle/normal2/button" section="TeRM" auto_size="all" alignment="centre"  red_replacement="white" colour="black">
 				<layout class="stick_to_sides_attachment" alignment="right" inset="120" />
-				<layout class="stick_to_sides_attachment" alignment="bottom" inset="60" />
+				<layout class="stick_to_sides_attachment" alignment="bottom" inset="40" />
 				<translation id="text" value="Recent Matches" />
 			</widget>
 			<!-- Siguiente rival -->
-			<widget class="link_button" appearance="buttons/subtle/normal2/button" section="Tpor" auto_size="all" alignment="centre"  red_replacement="secondary" colour="primary">
+			<widget class="link_button" appearance="buttons/subtle/normal2/button" section="Tpor" auto_size="all" alignment="centre"  red_replacement="white" colour="black">
 				<layout class="stick_to_sides_attachment" alignment="right" inset="20" />
-				<layout class="stick_to_sides_attachment" alignment="bottom" inset="60" />
+				<layout class="stick_to_sides_attachment" alignment="bottom" inset="40" />
 				<translation id="text" value="Next match" />
 			</widget>
 			

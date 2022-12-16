@@ -3,7 +3,7 @@
   <layout class="arrange_vertical_attachment" alignment="top,extend" offset="0" gap="0" >
     <record id="auto_size_restrictions">
       <string id="type" value="value" />
-      <integer id="value" value="810" />
+      <integer id="value" value="780" />
       <string id="limit_type" value="maximum" />
       <string id="orientation" value="vertical" />
     </record>

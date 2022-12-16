@@ -1,5 +1,5 @@
 <panel>
-	<layout class="stick_to_sides_attachment" alignment="all" inset="0" apply_to_children="true"/>
+	<layout class="stick_to_sides_attachment" alignment="all" inset="16" apply_to_children="true"/>
 
 
 
@@ -21,7 +21,7 @@
 				<layout class="arrange_horizontal_attachment" alignment="left, extend" gap="10" offset="0" />
 				<layout class="stick_to_sides_attachment" alignment="vertical" inset="0" apply_to_children="true"/>
 
-				        <container width="1"/>
+				<container width="20"/>
 						
 				<!-- title area -->
 				<widget class="text" id="sect" font="title" alignment="left,centre_y" size="20"  multiline="false" auto_size="horizontal" wants_mouse_events="false" dont_give_default_focus="true" colour="secondary">
